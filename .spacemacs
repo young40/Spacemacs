@@ -280,6 +280,8 @@ values."
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
 
+   dotspacemacs-line-numbers t
+
    configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
                                         ("org-cn"   . "https://elpa.zilongshanren.com/org/")
                                         ("gnu-cn"   . "https://elpa.zilongshanren.com/gnu/"))
