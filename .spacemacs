@@ -280,6 +280,7 @@ values."
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
 
+   dotspacemacs-maximized-at-startup t
    dotspacemacs-line-numbers t
 
    configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
