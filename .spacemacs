@@ -279,6 +279,11 @@ values."
    ;; delete only whitespace for changed lines or `nil' to disable cleanup.
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
+
+   configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
+                                        ("org-cn"   . "https://elpa.zilongshanren.com/org/")
+                                        ("gnu-cn"   . "https://elpa.zilongshanren.com/gnu/"))
+
    ))
 
 (defun dotspacemacs/user-init ()
