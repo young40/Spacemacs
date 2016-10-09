@@ -50,6 +50,40 @@ values."
      ;; syntax-checking
      ;; version-control
      )
+
+   dotspacemacs-configuration-layer-path '("~/dot/Spacemacs/private/")
+
+   dotspacemacs-configuration-layers
+   '(
+     ;; ----------------------------------------------------------------
+     ;; Example of useful layers you may want to use right away.
+     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
+     ;; <M-m f e R> (Emacs style) to install them.
+     ;; ----------------------------------------------------------------
+     auto-completion
+     better-defaults
+     emacs-lisp
+     git
+     helm
+     lua
+     markdown
+     org
+     osx
+     typescript
+     python
+     ;; (shell :variables
+     ;;        shell-default-height 30
+     ;;        shell-default-position 'bottom)
+     ;; spell-checking
+     syntax-checking
+     swift
+     ;; version-control
+     yaml
+
+     ;; my config layers
+     lua-config
+     )
+
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
