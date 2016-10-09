@@ -62,6 +62,8 @@ values."
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     (colors :variables
+             colors-colorize-identifiers 'all)
      emacs-lisp
      git
      helm
