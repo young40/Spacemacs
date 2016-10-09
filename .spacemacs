@@ -321,6 +321,7 @@ values."
                          spacemacs-light)
    dotspacemacs-maximized-at-startup t
    dotspacemacs-line-numbers t
+   dotspacemacs-scratch-mode 'lisp-interaction-mode
 
    configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
                                         ("org-cn"   . "https://elpa.zilongshanren.com/org/")
