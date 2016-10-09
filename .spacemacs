@@ -319,6 +319,10 @@ values."
    dotspacemacs-themes '(solarized-dark
                          spacemacs-dark
                          spacemacs-light)
+
+   dotspacemacs-startup-lists '((recents . 20)
+                                (projects . 15))
+
    dotspacemacs-maximized-at-startup t
    dotspacemacs-line-numbers t
    dotspacemacs-scratch-mode 'lisp-interaction-mode
