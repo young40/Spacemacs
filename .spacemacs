@@ -316,6 +316,9 @@ values."
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
 
+   dotspacemacs-themes '(solarized-dark
+                         spacemacs-dark
+                         spacemacs-light)
    dotspacemacs-maximized-at-startup t
    dotspacemacs-line-numbers t
 
