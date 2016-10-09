@@ -349,6 +349,16 @@ you should place your code here."
             (lambda ()
               (define-key dired-mode-map (kbd "i")
                 (lambda () (interactive) (find-alternate-file "..")))))
+
+  (when (display-graphic-p)
+    (set-face-attribute
+     'default nil :font "Monaco 14")
+    (dolist (charset '(kana han symbol cjk-misc bopomofo))
+      (set-fontset-font (frame-parameter nil 'font)
+                        charset
+                        (font-spec :family "STHeiti" :size 16))
+      )
+    )
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
