@@ -67,6 +67,7 @@ values."
      emacs-lisp
      git
      helm
+     html
      javascript
      lua
      markdown
