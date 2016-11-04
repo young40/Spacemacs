@@ -73,7 +73,7 @@ values."
      markdown
      org
      osx
-     typescript
+     ;; typescript
      python
      ;; (shell :variables
      ;;        shell-default-height 30
