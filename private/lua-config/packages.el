@@ -6,5 +6,5 @@
     :defer t
     :config
     (progn
-      (setq lua-indent-level 4))
+      (setq lua-indent-level 2))
     ))
