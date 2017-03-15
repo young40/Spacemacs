@@ -335,6 +335,12 @@ values."
                                         ("org-cn"   . "https://elpa.zilongshanren.com/org/")
                                         ("gnu-cn"   . "https://elpa.zilongshanren.com/gnu/"))
 
+   dotspacemacs-default-font '("Monaco"
+                               :size 14
+                               :weight normal
+                               :width normal
+                               :powerline-scale 1.1)
+
    ))
 
 (defun dotspacemacs/user-init ()
