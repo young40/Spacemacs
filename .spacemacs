@@ -362,6 +362,8 @@ you should place your code here."
   (setq vc-follow-symlinks t)
   (setq create-lockfiles nil)
 
+  (spacemacs/set-leader-keys (kbd "&") 'spacemacs/helm-buffers-smart-do-search-region-or-symbol)
+
   (add-hook 'dired-mode-hook
             (lambda ()
               (define-key dired-mode-map (kbd "i")
