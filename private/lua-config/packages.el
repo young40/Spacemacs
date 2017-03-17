@@ -6,5 +6,7 @@
     :defer t
     :config
     (progn
-      (setq lua-indent-level 2))
+      (setq lua-indent-level 2)
+      (spacemacs/set-leader-keys-for-major-mode 'lua-mode "r" 'lua-send-buffer)
+      )
     ))
