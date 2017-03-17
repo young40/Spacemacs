@@ -7,6 +7,6 @@
     :config
     (progn
       (setq lua-indent-level 2)
-      (spacemacs/set-leader-keys-for-major-mode 'lua-mode "r" 'lua-send-buffer)
+      (define-key lua-mode-map (kbd "s-r") 'lua-send-buffer)
       )
     ))
