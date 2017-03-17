@@ -364,6 +364,8 @@ you should place your code here."
 
   (spacemacs/set-leader-keys (kbd "&") 'spacemacs/helm-buffers-smart-do-search-region-or-symbol)
 
+  (define-key minibuffer-inactive-mode-map (kbd "<mouse-1>") nil)
+
   (add-hook 'dired-mode-hook
             (lambda ()
               (define-key dired-mode-map (kbd "i")
