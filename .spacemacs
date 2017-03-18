@@ -366,6 +366,8 @@ you should place your code here."
 
   (define-key minibuffer-inactive-mode-map (kbd "<mouse-1>") nil)
 
+  (global-set-key (kbd "s-/") 'hippie-expand)
+
   (add-hook 'dired-mode-hook
             (lambda ()
               (define-key dired-mode-map (kbd "i")
