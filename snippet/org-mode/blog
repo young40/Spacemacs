@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: new blog
+# key: blog
+# --
+#+TITLE: $1
+#+DATE: <`(format-time-string "%Y-%m-%d" (current-time))`>
+#+TAGS: $2
+#+CATEGORIES: $4
+#+LAYOUT: post
