@@ -8,7 +8,10 @@
     :defer t
     :config
     (progn
-      (setq lua-indent-level 2)
+      (setq lua-indent-level 4)
+      (custom-set-variables
+       '(tab-width 4))
+
       (define-key lua-mode-map (kbd "s-r") 'lua-send-buffer)
 
       (push '(lua-mode "getmetatable" "ipairs" "module" "pairs" "print"
