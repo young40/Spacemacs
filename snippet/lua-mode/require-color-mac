@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: require color[OS X]
+# key: rcolm
+# --
+
+if device.platform == "mac" then
+   local color = require "color"
+
+
+end

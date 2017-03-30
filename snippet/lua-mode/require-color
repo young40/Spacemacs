@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: require color
+# key: rcol
+# --
+local color = require "color"
