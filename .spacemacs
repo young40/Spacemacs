@@ -379,7 +379,8 @@ you should place your code here."
   (setq vc-follow-symlinks t)
   (setq create-lockfiles nil)
 
-  (spacemacs/set-leader-keys (kbd "&") 'spacemacs/helm-buffers-smart-do-search-region-or-symbol)
+  (spacemacs/set-leader-keys (kbd "&") 'spacemacs/helm-file-do-ag-region-or-symbol)
+  (spacemacs/set-leader-keys (kbd "^") 'spacemacs/helm-buffers-smart-do-search-region-or-symbol)
 
   (define-key minibuffer-inactive-mode-map (kbd "<mouse-1>") nil)
 
