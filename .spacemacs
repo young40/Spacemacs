@@ -405,7 +405,7 @@ before packages are loaded."
 
   (define-key minibuffer-inactive-mode-map (kbd "<mouse-1>") nil)
 
-  (global-set-key (kbd "s-/") 'hippie-expand)
+  (global-set-key (kbd "H-/") 'hippie-expand)
 
   (add-hook 'dired-mode-hook
             (lambda ()
