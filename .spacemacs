@@ -358,6 +358,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-zone-out-when-idle nil
 
    ;; My Config Part2
+   dotspacemacs-loading-progress-bar nil
    dotspacemacs-themes '(solarized-dark
                          spacemacs-dark
                          spacemacs-light)
