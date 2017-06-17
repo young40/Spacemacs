@@ -408,6 +408,7 @@ before packages are loaded."
   (define-key minibuffer-inactive-mode-map (kbd "<mouse-1>") nil)
 
   (global-set-key (kbd "H-/") 'hippie-expand)
+  (global-set-key (kbd "H-.") 'evil-window-next)
 
   (add-hook 'dired-mode-hook
             (lambda ()
