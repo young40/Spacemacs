@@ -371,9 +371,9 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-line-numbers t
    dotspacemacs-scratch-mode 'lisp-interaction-mode
 
-   configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
-                                        ("org-cn"   . "https://elpa.zilongshanren.com/org/")
-                                        ("gnu-cn"   . "https://elpa.zilongshanren.com/gnu/"))
+   configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
+                                        ("org-cn"   . "https://elpa.emacs-china.org/org/")
+                                        ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/"))
 
    dotspacemacs-default-font '("Monaco"
                                :size 14
