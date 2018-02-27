@@ -78,6 +78,7 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      syntax-checking
      swift
+     typescript
      ;; version-control
      yaml
 
