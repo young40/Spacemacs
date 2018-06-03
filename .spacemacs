@@ -74,6 +74,7 @@ This function should only modify configuration layer settings."
      org
      osx
      ;; typescript
+     php
      python
      rust
      ;; (shell :variables
