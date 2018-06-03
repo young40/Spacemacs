@@ -486,6 +486,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-pretty-docs nil
 
    ;; My Config Part2
+   dotspacemacs-enable-server t
    dotspacemacs-loading-progress-bar nil
    dotspacemacs-themes '(solarized-dark
                          spacemacs-dark
