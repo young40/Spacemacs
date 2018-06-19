@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: blog highlight
+# key: bhi
+# --
+{{< highlight $1 >}}
+$2
+{{< /highlight >}}
