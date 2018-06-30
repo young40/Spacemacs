@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: new blog
+# name: new blog(blog)
 # key: blog
 # --
 #+TITLE: $1

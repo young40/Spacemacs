@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: blog highlight
+# name: blog highlight(bhi)
 # key: bhi
 # --
 {{< highlight $1 >}}

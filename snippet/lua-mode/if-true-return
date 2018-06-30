@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: if true return
+# name: if true return(iff)
 # key: iff
 # --
 if true then return end
