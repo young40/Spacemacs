@@ -66,6 +66,7 @@ This function should only modify configuration layer settings."
              colors-colorize-identifiers 'all)
      emacs-lisp
      git
+     groovy
      helm
      html
      javascript
