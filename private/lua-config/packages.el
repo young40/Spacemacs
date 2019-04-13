@@ -55,6 +55,7 @@
                       ))
       (define-key evil-normal-state-map (kbd "go") 'lsp-ui-peek-find-definitions)
       (define-key evil-normal-state-map (kbd "gb") 'lsp-ui-peek-jump-backward)
+      (define-key evil-normal-state-map (kbd "gh") 'lsp-ui-peek-jump-forward)
     )
     )
   )
@@ -80,7 +81,3 @@
       (define-key lua-mode-map (kbd "s-r") 'lua-send-buffer)
       )
     ))
-
-;; (defun lua-config/post-init-company()
-  ;; (spacemacs|add-company-backends :backends company-capf
-                                  ;; :modes lua-mode))
