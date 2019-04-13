@@ -70,7 +70,8 @@ This function should only modify configuration layer settings."
      helm
      html
      javascript
-     lua
+     ;; lua
+     lsp
      markdown
      org
      osx
