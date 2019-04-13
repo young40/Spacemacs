@@ -40,18 +40,22 @@
     :commands lsp
     :hook ((lua-mode) . lsp)
     :config
-    (lsp-register-client
-     (make-lsp-client :new-connection
-                      (lsp-stdio-connection
-                       (list
-                        "/usr/bin/java"
-                        "-cp"
-                        "/Users/young40/Work/Lua/EmmyLua-LanguageServer/EmmyLua-LS/build/libs/EmmyLua-LS-all.jar"
-                        "com.tang.vscode.MainKt"
-                        ))
-                      :major-modes '(lua-mode)
-                      :server-id 'emmy-lua
+    (progn
+      (lsp-register-client
+       (make-lsp-client :new-connection
+                        (lsp-stdio-connection
+                         (list
+                          "/usr/bin/java"
+                          "-cp"
+                          "/Users/young40/Work/Lua/EmmyLua-LanguageServer/EmmyLua-LS/build/libs/EmmyLua-LS-all.jar"
+                          "com.tang.vscode.MainKt"
+                          ))
+                        :major-modes '(lua-mode)
+                        :server-id 'emmy-lua
                       ))
+      (define-key evil-normal-state-map (kbd "go") 'lsp-ui-peek-find-definitions)
+      (define-key evil-normal-state-map (kbd "gb") 'lsp-ui-peek-jump-backward)
+    )
     )
   )
 
