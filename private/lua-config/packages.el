@@ -69,6 +69,20 @@
     )
     )
 
+(defun lua-conifg/post-init-lsp-ui ()
+  (use-package lsp-ui
+    :config
+    (progn
+      (defvar lsp-ui-doc-enable nil "Enable/disable lsp-ui-doc overlay")
+      (setq
+       lsp-ui-doc-enable nil
+            lsp-ui-sideline-enable nil
+            lsp-ui-imenu-enable nil
+            lsp-ui-peek-enable nil
+            )
+      )
+    ))
+
 (defun lua-config/post-init-lua-mode()
   (use-package lua-mode
     :defer t
