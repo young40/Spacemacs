@@ -2,6 +2,7 @@
       '(
         company
         lsp-mode
+        flycheck
         lua-mode
         ))
 
@@ -34,6 +35,12 @@
 (defun lua-config/post-init-company ()
   (add-hook 'lua-mode-hook 'company-mode))
 
+(defun lua-config/post-init-flycheck ()
+  (add-hook 'lua-mode-hook (lambda ()
+                             (setq flycheck-checker 'lua-luacheck)
+                             ))
+  )
+
 (defun lua-config/post-init-lsp-mode ()
   (use-package lsp-mode
     :ensure t
@@ -52,6 +59,7 @@
                           ))
                         :major-modes '(lua-mode)
                         :server-id 'emmy-lua
+                        :ignore-messages '("progressReport" "workspaceFolders")
                       ))
       (define-key evil-normal-state-map (kbd "go") 'lsp-ui-peek-find-definitions)
       (define-key evil-normal-state-map (kbd "gb") 'lsp-ui-peek-jump-backward)
