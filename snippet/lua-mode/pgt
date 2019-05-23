@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: page trace(pgt)
+# key: pgt
+# --
+Log.d("PAGE_TRACE: `(file-name-nondirectory (buffer-file-name))`", Log.T)
