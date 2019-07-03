@@ -73,7 +73,9 @@ This function should only modify configuration layer settings."
      ;; lua
      lsp
      markdown
-     org
+     (org
+      :variables org-enable-reveal-js-support t
+      )
      osx
      ;; typescript
      php
