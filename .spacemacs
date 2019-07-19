@@ -66,6 +66,7 @@ This function should only modify configuration layer settings."
              colors-colorize-identifiers 'all)
      emacs-lisp
      git
+     graphviz
      groovy
      helm
      html
@@ -93,7 +94,7 @@ This function should only modify configuration layer settings."
 
      ;; my config layers
      lua-config
-     org-config
+     ;; org-config
      )
    ;; My Config Part1
 
