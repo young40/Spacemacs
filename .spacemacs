@@ -81,6 +81,7 @@ This function should only modify configuration layer settings."
      osx
      ;; typescript
      php
+     plantuml
      python
      rust
      ;; (shell :variables
