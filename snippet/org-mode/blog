@@ -4,8 +4,8 @@
 # --
 #+TITLE: $1
 #+DATE: `(format-time-string "%Y-%m-%dT%H:%M:%S+08:00" (current-time))`
-#+TAGS: $2
-#+CATEGORIES: $4
+#+TAGS[]: $2
+#+CATEGORIES[]: $4
 #+LAYOUT: post
 #+OPTIONS: toc:nil
 #+DRAFT: true
