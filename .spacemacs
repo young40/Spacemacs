@@ -556,13 +556,8 @@ before packages are loaded."
               (define-key dired-mode-map (kbd "i")
                 (lambda () (interactive) (find-alternate-file "..")))))
 
-  (when (display-graphic-p)
-    (set-face-attribute
-     'default nil :font "Monaco 14")
-    (dolist (charset '(kana han symbol cjk-misc bopomofo))
-      (set-fontset-font (frame-parameter nil 'font)
-                        charset
-                        (font-spec :family "STHeiti" :size 16))))
+  (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
+
   ;; My Config Part3
   )
 
