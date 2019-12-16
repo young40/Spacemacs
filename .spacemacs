@@ -63,6 +63,7 @@ This function should only modify configuration layer settings."
      (auto-completion :variables
                       auto-completion-private-snippets-directory '("~/dot/Spacemacs/snippet/"))
      better-defaults
+     chinese
      (colors :variables
              colors-colorize-identifiers 'all)
      emacs-lisp
