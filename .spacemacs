@@ -77,8 +77,9 @@ This function should only modify configuration layer settings."
      ;; lua
      lsp
      markdown
-     (org
-      :variables org-enable-reveal-js-support t
+     (org :variables
+          org-enable-reveal-js-support t
+          org-startup-with-inline-images t
       )
      osx
      ;; typescript
