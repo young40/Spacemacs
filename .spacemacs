@@ -558,7 +558,7 @@ before packages are loaded."
               (define-key dired-mode-map (kbd "i")
                 (lambda () (interactive) (find-alternate-file "..")))))
 
-  (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
+  ;; (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
 
   ;; My Config Part3
   )
