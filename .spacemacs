@@ -75,7 +75,8 @@ This function should only modify configuration layer settings."
      html
      javascript
      ;; lua
-     lsp
+     (lsp :variables
+          lsp-ui-doc-enable	nil)
      markdown
      (org :variables
           org-enable-reveal-js-support t
