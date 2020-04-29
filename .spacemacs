@@ -67,13 +67,10 @@ This function should only modify configuration layer settings."
      ;;         chinese-enable-fcitx t)
      (colors :variables
              colors-colorize-identifiers 'all)
-     emacs-lisp
      git
      graphviz
      groovy
      helm
-     html
-     javascript
      ;; lua
      (lsp :variables
           lsp-ui-doc-enable	nil)
@@ -84,19 +81,24 @@ This function should only modify configuration layer settings."
       )
      osx
      ;; typescript
-     php
      plantuml
-     python
-     rust
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
-     swift
-     typescript
      ;; version-control
      yaml
+
+     csharp
+     emacs-lisp
+     html
+     javascript
+     php
+     python
+     rust
+     swift
+     typescript
 
      ;; my config layers
      lua-config
