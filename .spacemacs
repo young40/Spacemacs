@@ -519,6 +519,11 @@ It should only modify the values of Spacemacs settings."
    ;;                                      ("org-cn"   . "https://elpa.emacs-china.org/org/")
    ;;                                      ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/"))
 
+   configuration-layer-elpa-archives
+         '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+           ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+           ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+
    dotspacemacs-default-font '("Monaco"
                                :size 15
                                :weight normal
