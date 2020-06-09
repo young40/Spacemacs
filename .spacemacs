@@ -102,7 +102,7 @@ This function should only modify configuration layer settings."
 
      ;; my config layers
      lua-config
-     ;; org-config
+     org-config
      )
    ;; My Config Part1
 
@@ -113,7 +113,11 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '(
+                                      (valign :location (recipe
+                                                         :fetcher github
+                                                         :repo "casouri/valign"))
+                                      )
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
