@@ -3,8 +3,8 @@
 # key: luame
 # --
 --
---  `(file-name-nondirectory (buffer-file-name))`
+-- `(file-name-nondirectory (buffer-file-name))`
 --
---  Created by Yang Shiling(杨世玲) on `(format-time-string "%Y-%m-%d" (current-time))`.
---  Copyright © 2018 Xianlai. All rights reserved.
+-- Created by Yang Shiling(杨世玲) on `(format-time-string "%Y-%m-%d" (current-time))`.
+-- Copyright © 2018 Xianlai. All rights reserved.
 --
