@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: PureMVC Command(pcmd)
+# key: pcmd
+# --
+
+local `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` = class("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`", PureMVC.SimpleCommand)
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:execute()
+
+end
+
+return `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
