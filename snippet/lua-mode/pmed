@@ -15,4 +15,10 @@ local `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` =
 -- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:handleNotification(notification)
 -- end
 
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:onRegister()
+-- end
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:onRemove()
+-- end
+
 return `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
