@@ -7,6 +7,8 @@
 
 local `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` = class("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`", PureMVC.Mediator)
 
+`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.NAME = `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.__cname
+
 -- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:listNotificationInterests()
 --     return {
 --     }
