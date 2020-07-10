@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: PureMVC Proxy(ppxy)
+# key: ppxy
+# --
+
+local `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` = class("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`", PureMVC.Proxy)
+
+`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.NAME = `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.__cname
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:onRegister()
+-- end
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:onRemove()
+-- end
+
+return `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
