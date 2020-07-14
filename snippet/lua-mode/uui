@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: Unity Lua UI(uui)
+# key: uui
+# --
+
+local UIEventListener = CS.CCM.UIEventListener
+local UE = CS.UnityEngine
+local UI = CS.UnityEngine.UI
+
+local `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` = class("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`", UIBehaviour)
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:Awake()
+end
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:Start()
+end
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:OnInit(param)
+end
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:Update()
+end
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:OnEnable()
+end
+
+function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:OnDisable()
+end
+
+return `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`
