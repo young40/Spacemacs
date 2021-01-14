@@ -67,6 +67,7 @@ This function should only modify configuration layer settings."
      ;;         chinese-enable-fcitx t)
      (colors :variables
              colors-colorize-identifiers 'all)
+     docker
      git
      graphviz
      groovy
