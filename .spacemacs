@@ -103,7 +103,7 @@ This function should only modify configuration layer settings."
      typescript
 
      ;; my config layers
-     lua-config
+     ;; lua-config
      ;; org-config
      )
    ;; My Config Part1
