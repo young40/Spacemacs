@@ -637,12 +637,12 @@ before packages are loaded."
   (global-set-key (kbd "H-/") 'hippie-expand)
   (global-set-key (kbd "H-.") 'evil-window-next)
 
-  ;; (add-hook 'dired-mode-hook
-  ;;           (lambda ()
-  ;;             (define-key dired-mode-map (kbd "i")
-  ;;               (lambda () (interactive) (find-alternate-file "..")))))
-
   (add-hook 'dired-mode-hook 'auto-revert-mode)
+
+  (evilified-state-evilify-map dired-mode-map
+    :mode dired-mode
+    :bindings
+    (kbd "i") 'dired-jump)
 
   ;; (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
 
