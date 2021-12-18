@@ -557,6 +557,13 @@ It should only modify the values of Spacemacs settings."
    ;; (default nil)
    dotspacemacs-pretty-docs nil
 
+   ;; If nil the home buffer shows the full path of agenda items
+   ;; and todos. If non-nil only the file name is shown.
+   dotspacemacs-home-shorten-agenda-source nil
+
+   ;; If non-nil then byte-compile some of Spacemacs files.
+   dotspacemacs-byte-compile nil
+
    ;; My Config Part2
    dotspacemacs-enable-server t
    dotspacemacs-loading-progress-bar nil
@@ -574,10 +581,6 @@ It should only modify the values of Spacemacs settings."
    ;; configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
    ;;                                      ("org-cn"   . "https://elpa.emacs-china.org/org/")
    ;;                                      ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/"))
-   ;; If nil the home buffer shows the full path of agenda items
-   ;; and todos. If non-nil only the file name is shown.
-   dotspacemacs-home-shorten-agenda-source nil
-
    configuration-layer-elpa-archives
          '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
            ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
@@ -590,8 +593,6 @@ It should only modify the values of Spacemacs settings."
                                :powerline-scale 1.1)
    ;; My Config Part2
    ))
-   ;; If non-nil then byte-compile some of Spacemacs files.
-   dotspacemacs-byte-compile nil))
 
 (defun dotspacemacs/user-env ()
   "Environment variables setup.
