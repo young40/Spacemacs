@@ -72,6 +72,7 @@ This function should only modify configuration layer settings."
      graphviz
      groovy
      helm
+     latex
      ;; lua
      (lsp :variables
           lsp-ui-doc-enable	nil)
@@ -103,7 +104,7 @@ This function should only modify configuration layer settings."
 
      ;; my config layers
      lua-config
-     org-config
+     ;; org-config
      )
    ;; My Config Part1
 
