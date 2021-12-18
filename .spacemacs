@@ -637,10 +637,12 @@ before packages are loaded."
   (global-set-key (kbd "H-/") 'hippie-expand)
   (global-set-key (kbd "H-.") 'evil-window-next)
 
-  (add-hook 'dired-mode-hook
-            (lambda ()
-              (define-key dired-mode-map (kbd "i")
-                (lambda () (interactive) (find-alternate-file "..")))))
+  ;; (add-hook 'dired-mode-hook
+  ;;           (lambda ()
+  ;;             (define-key dired-mode-map (kbd "i")
+  ;;               (lambda () (interactive) (find-alternate-file "..")))))
+
+  (add-hook 'dired-mode-hook 'auto-revert-mode)
 
   ;; (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
 
@@ -649,3 +651,24 @@ before packages are loaded."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(evil-want-Y-yank-to-eol nil)
+ '(global-pangu-spacing-mode nil)
+ '(highlight-parentheses-colors '("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900"))
+ '(org-export-backends '(ascii html icalendar latex md odt)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((((class color) (min-colors 89)) (:foreground "#839496" :background "#002b36")))))
+)
