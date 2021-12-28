@@ -8,5 +8,5 @@
 #+DATE: `(format-time-string "%Y-%m-%dT%H:%M:%S+08:00" (current-time))`
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_DRAFT: true
-#+HUGO_BASE_DIR: ../../
+#+HUGO_BASE_DIR: ../
 #+OPTIONS: author:nil
