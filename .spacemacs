@@ -82,7 +82,10 @@ This function should only modify configuration layer settings."
       )
      osx
      ;; typescript
-     plantuml
+     (plantuml :variables
+               plantuml-jar-path     "/usr/local/Cellar/plantuml/1.2021.16/libexec/plantuml.jar"
+               org-plantuml-jar-path "/usr/local/Cellar/plantuml/1.2021.16/libexec/plantuml.jar"
+               )
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
