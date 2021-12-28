@@ -79,6 +79,7 @@ This function should only modify configuration layer settings."
      (org :variables
           org-enable-reveal-js-support t
           org-startup-with-inline-images t
+          org-enable-hugo-support t
       )
      osx
      ;; typescript
@@ -667,7 +668,8 @@ This function is called at the very end of Spacemacs initialization."
  '(evil-want-Y-yank-to-eol nil)
  '(global-pangu-spacing-mode nil)
  '(highlight-parentheses-colors '("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900"))
- '(org-export-backends '(ascii html icalendar latex md odt)))
+ '(org-export-backends '(ascii html icalendar latex md odt))
+ '(org-hugo-section "post"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
