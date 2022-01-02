@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: blog time now
+# key: bnow
+# --
+`(format-time-string "%Y-%m-%dT%H:%M:%S+08:00" (current-time))`
