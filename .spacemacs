@@ -582,13 +582,10 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-line-numbers t
    dotspacemacs-scratch-mode 'lisp-interaction-mode
 
-   ;; configuration-layer--elpa-archives '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
-   ;;                                      ("org-cn"   . "https://elpa.emacs-china.org/org/")
-   ;;                                      ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/"))
    configuration-layer-elpa-archives
-         '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-           ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-           ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+         '(("melpa-cn" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+           ("nongnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
+           ("gnu-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
 
    dotspacemacs-default-font '("Monaco"
                                :size 15
