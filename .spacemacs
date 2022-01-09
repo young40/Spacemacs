@@ -77,8 +77,8 @@ This function should only modify configuration layer settings."
           lsp-ui-doc-enable	nil)
      markdown
      (org :variables
-          org-enable-reveal-js-support t
-          org-startup-with-inline-images t
+          ;; org-enable-reveal-js-support t
+          ;; org-startup-with-inline-images t
           org-enable-hugo-support t
       )
      osx
