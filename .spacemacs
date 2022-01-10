@@ -68,6 +68,7 @@ This function should only modify configuration layer settings."
              colors-colorize-identifiers 'all)
      docker
      git
+     gpu
      graphviz
      groovy
      helm
