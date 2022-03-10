@@ -81,6 +81,7 @@ This function should only modify configuration layer settings."
           ;; org-enable-reveal-js-support t
           ;; org-startup-with-inline-images t
           org-enable-hugo-support t
+          org-enable-valign t
       )
      osx
      ;; typescript
