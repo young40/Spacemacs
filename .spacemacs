@@ -585,9 +585,10 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-scratch-mode 'lisp-interaction-mode
 
    configuration-layer-elpa-archives
-         '(("melpa-cn" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-           ("nongnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
-           ("gnu-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+   '(("melpa-cn" . "https://mirror.nju.edu.cn/elpa/melpa/")
+     ("nongnu"   . "https://mirror.nju.edu.cn/elpa/nongnu/")
+     ("gnu-cn"   . "https://mirror.nju.edu.cn/elpa/gnu/")
+     )
 
    dotspacemacs-default-font '("Monaco"
                                :size 15
