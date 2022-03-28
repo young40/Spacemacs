@@ -648,6 +648,7 @@ before packages are loaded."
     (kbd "i") 'dired-jump)
 
   (setq-default pyim-punctuation-translate-p '(no))
+  (setq pyim-page-length 9)
 
   ;; (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
 
