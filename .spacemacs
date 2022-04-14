@@ -75,7 +75,6 @@ This function should only modify configuration layer settings."
      groovy
      helm
      latex
-     ;; lua
      (lsp :variables
           lsp-ui-doc-enable nil)
      markdown
@@ -86,7 +85,6 @@ This function should only modify configuration layer settings."
           org-enable-valign t
       )
      osx
-     ;; typescript
      (plantuml :variables
                plantuml-jar-path     "/usr/local/Cellar/plantuml/1.2021.16/libexec/plantuml.jar"
                org-plantuml-jar-path "/usr/local/Cellar/plantuml/1.2021.16/libexec/plantuml.jar"
@@ -102,6 +100,7 @@ This function should only modify configuration layer settings."
      csharp
      emacs-lisp
      html
+     lua
      javascript
      php
      python
@@ -586,9 +585,9 @@ It should only modify the values of Spacemacs settings."
 
    dotspacemacs-enable-server t
    dotspacemacs-loading-progress-bar nil
-   ;; dotspacemacs-themes '(solarized-dark
-   ;;                       spacemacs-dark
-   ;;                       spacemacs-light)
+   dotspacemacs-themes '(solarized-dark
+                         spacemacs-dark
+                         spacemacs-light)
 
    dotspacemacs-startup-lists '((recents . 20)
                                 (projects . 15))
