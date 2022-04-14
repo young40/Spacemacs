@@ -595,6 +595,8 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-line-numbers t
    dotspacemacs-scratch-mode 'lisp-interaction-mode
 
+   dotspacemacs-startup-buffer-show-icons t
+
    configuration-layer-elpa-archives
    '(("melpa-cn" . "https://mirror.nju.edu.cn/elpa/melpa/")
      ("nongnu"   . "https://mirror.nju.edu.cn/elpa/nongnu/")
