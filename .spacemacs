@@ -667,10 +667,11 @@ before packages are loaded."
     :bindings
     (kbd "i") 'dired-jump)
 
+  (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")))
   (setq-default pyim-punctuation-translate-p '(no))
+  (setq pyim-page-tooltip 'popup)
   (setq pyim-page-length 9)
-
-  ;; (spacemacs//set-monospaced-font "Monaco" "Hiragino Sans GB W3" 15 18)
+  (add-hook 'emacs-startup-hook #'(lambda () (pyim-restart-1 t)))
 
   ;; My Config Part3
 )
