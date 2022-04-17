@@ -684,6 +684,8 @@ before packages are loaded."
   (setq pyim-page-length 9)
   (add-hook 'emacs-startup-hook #'(lambda () (pyim-restart-1 t)))
 
+  (add-to-list 'auto-mode-alist '("\\.asset$" . yaml-mode ))
+
   ;; My Config Part3
 )
 
