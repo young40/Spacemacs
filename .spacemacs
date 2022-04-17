@@ -69,7 +69,7 @@ This function should only modify configuration layer settings."
              colors-colorize-identifiers 'all)
      docker
      emoji
-     git
+     ;; git
      gpu
      graphviz
      groovy
@@ -139,6 +139,7 @@ This function should only modify configuration layer settings."
                                     treemacs-persp
                                     treemacs-icons-dired
                                     treemacs-evil
+                                    treemacs-magit
                                     treemacs
                                     org-download
                                     evil-tutor
