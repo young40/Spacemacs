@@ -679,10 +679,14 @@ before packages are loaded."
     :bindings
     (kbd "i") 'dired-jump)
 
-  (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")))
+  (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
+                     (:name "symbol" :file "~/dot/Spacemacs/pyim-symbol.pyim")))
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-page-tooltip 'popup)
   (setq pyim-page-length 9)
+  (setq pyim-english-input-switch-functions
+        '(pyim-probe-auto-english
+          ))
   (add-hook 'emacs-startup-hook #'(lambda () (pyim-restart-1 t)))
 
   (add-to-list 'auto-mode-alist '("\\.asset$" . yaml-mode ))
