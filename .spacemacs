@@ -684,10 +684,21 @@ before packages are loaded."
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-page-tooltip 'popup)
   (setq pyim-page-length 9)
-  (setq pyim-english-input-switch-functions
-        '(pyim-probe-auto-english
-          ))
   (add-hook 'emacs-startup-hook #'(lambda () (pyim-restart-1 t)))
+
+  (setq pyim-chinese-status t)
+  (defun pyim-chinese-switch()
+    (interactive)
+    (setq pyim-chinese-status (not pyim-chinese-status))
+    (if pyim-chinese-status
+      (message "Pyim Chinese: On")
+      (message "Pyim Chinese: Off"))
+    )
+  (defun pyim-chinese-probe() (not pyim-chinese-status))
+
+  (global-set-key (kbd "H-k") 'pyim-chinese-switch)
+  (setq pyim-english-input-switch-functions
+        '(pyim-chinese-probe))
 
   (add-to-list 'auto-mode-alist '("\\.asset$" . yaml-mode ))
 
