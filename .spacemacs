@@ -83,6 +83,7 @@ This function should only modify configuration layer settings."
           ;; org-startup-with-inline-images t
           org-enable-hugo-support t
           org-enable-valign t
+          org-pretty-entities t
       )
      osx
      (plantuml :variables
@@ -677,7 +678,8 @@ before packages are loaded."
   (define-key minibuffer-inactive-mode-map (kbd "<mouse-1>") nil)
 
   (global-set-key (kbd "H-/") 'hippie-expand)
-  (global-set-key (kbd "H-.") 'evil-window-next)
+  (global-set-key (kbd "H-.")  'evil-window-next)
+  (global-set-key (kbd "H-。") 'evil-window-next)
 
   (add-hook 'dired-mode-hook 'auto-revert-mode)
 
@@ -687,7 +689,8 @@ before packages are loaded."
     (kbd "i") 'dired-jump)
 
   (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
-                     (:name "symbol" :file "~/dot/Spacemacs/pyim-symbol.pyim")))
+                     ;; (:name "symbol" :file "~/dot/Spacemacs/pyim-symbol.pyim")
+                     ))
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-page-tooltip 'popup)
   (setq pyim-page-length 9)
