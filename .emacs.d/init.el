@@ -2,6 +2,8 @@
 
 (require 'init-packages)
 
+(require 'init-evil)
+
 (package-install 'keycast)
 (keycast-mode t)
 
@@ -28,12 +30,12 @@
 (global-hl-line-mode 1)
 
 (package-install 'monokai-theme)
-;;(load-theme 'monokai 1)
+(load-theme 'monokai 1)
 
 (add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/solarized-emacs")
 ;;(package-install 'solarized-theme)
-(require 'solarized)
-(load-theme 'solarized-dark t)
+;;(require 'solarized)
+;;(load-theme 'solarized-dark t)
 
 (setq mac-option-modifier 'meta
       mac-command-modifier 'super)
@@ -42,6 +44,7 @@
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-v") 'yank)
 (global-set-key (kbd "s-z") 'undo)
+(global-set-key (kbd "s-r") 'restart-emacs)
 
 ;;(icomplete-mode 1)
 

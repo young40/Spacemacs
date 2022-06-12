@@ -10,16 +10,17 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(unless (package-installed-p 'evil)
-  (package-install 'evil))
+(package-install 'use-package)
 
-(require 'evil)
-(evil-mode t)
+(use-package restart-emacs
+  :ensure t)
 
-(add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/use-package")
-(add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/restart-emacs")
-(require 'use-package)
-;;(package-install 'use-package)
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
+
+(unless (package-installed-p 'use-package)
+   (package-refresh-contents)
+   (package-install 'use-package))
 
 (use-package company
   :bind (:map company-active-map
@@ -33,6 +34,9 @@
 
 
 
+
 (require 'restart-emacs)
+
+
 
 (provide 'init-packages)
