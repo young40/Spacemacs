@@ -4,6 +4,9 @@
 
 (require 'init-evil)
 
+(use-package restart-emacs
+  :ensure t)
+
 (package-install 'keycast)
 (keycast-mode t)
 

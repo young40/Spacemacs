@@ -28,7 +28,4 @@
   (setq company-minimum-prefix-length 1)
   (setq company-idle-delay 0))
 
-(use-package restart-emacs
-  :ensure t)
-
 (provide 'init-packages)
