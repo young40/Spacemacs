@@ -681,6 +681,8 @@ before packages are loaded."
   (global-set-key (kbd "H-.")  'evil-window-next)
   (global-set-key (kbd "H-。") 'evil-window-next)
 
+  (global-set-key (kbd "H-r") 'org-hugo-export-to-md)
+
   (add-hook 'dired-mode-hook 'auto-revert-mode)
 
   (evilified-state-evilify-map dired-mode-map
