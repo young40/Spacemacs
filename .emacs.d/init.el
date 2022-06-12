@@ -5,11 +5,12 @@
 
 (require 'init-completion)
 (require 'init-evil)
+(require 'init-tools)
 (require 'init-ui)
 (require 'init-keybindings)
 
-(package-install 'keycast)
-(keycast-mode t)
+;; (package-install 'keycast)
+;; (keycast-mode t)
 
 (package-install 'vertico)
 (vertico-mode t)
@@ -47,6 +48,7 @@
 (setq mouse-wheel-progressive-speed nil)
 
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
+(add-hook 'dired-mode-hook 'auto-revert-mode)
 
 (setq custom-file (expand-file-name "/Users/young40/dot/Spacemacs/.emacs.d/custom.el"))
 (load custom-file 'no-error 'no-message)

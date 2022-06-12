@@ -7,7 +7,10 @@
 
 (my-leader-def 'normal
   "SPC" 'helm-M-x
+
   "bb" 'helm-mini
+  "bh" 'dashboard-goto-homepage
+
   )
 
 (setq mac-option-modifier 'meta
@@ -25,6 +28,7 @@
 (global-set-key (kbd "s-d") 'split-window-horizontally)
 (global-set-key (kbd "s-D") 'split-window-vertically)
 (global-set-key (kbd "s-.") 'evil-window-next)
+(global-set-key (kbd "s-。") 'evil-window-next)
 (global-set-key (kbd "s-w") 'delete-window)
 
 (global-set-key (kbd "s-/") 'comment-line)
