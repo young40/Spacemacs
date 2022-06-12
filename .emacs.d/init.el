@@ -67,6 +67,8 @@
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 
+(add-hook 'window-setup-hook 'toggle-frame-maximized t)
+
 (setq custom-file (expand-file-name "/Users/young40/dot/Spacemacs/.emacs.d/custom.el"))
 (load custom-file 'no-error 'no-message)
 
