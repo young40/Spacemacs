@@ -27,5 +27,6 @@
 (global-set-key (kbd "s-.") 'evil-window-next)
 (global-set-key (kbd "s-w") 'delete-window)
 
+(global-set-key (kbd "s-/") 'comment-line)
 
 (provide 'init-keybindings)

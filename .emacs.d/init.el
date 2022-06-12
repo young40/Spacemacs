@@ -5,6 +5,7 @@
 
 (require 'init-completion)
 (require 'init-evil)
+(require 'init-ui)
 (require 'init-keybindings)
 
 (package-install 'keycast)
@@ -26,8 +27,6 @@
 (package-install 'consult)
 (global-set-key (kbd "C-s") 'consult-line)
 
-(package-install 'monokai-theme)
-(load-theme 'monokai 1)
 
 (add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/solarized-emacs")
 ;;(package-install 'solarized-theme)
