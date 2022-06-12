@@ -1,9 +1,6 @@
-(require 'package)
+(add-to-list 'load-path "~/dot/Spacemacs/.emacs.d/lisp")
 
-(package-initialize)
-
-(when (not package-archive-contents)
-  (package-refresh-contents))
+(require 'init-packages)
 
 (package-install 'keycast)
 (keycast-mode t)
@@ -33,20 +30,25 @@
 (global-hl-line-mode 1)
 
 (package-install 'monokai-theme)
-(load-theme 'monokai 1)
+;;(load-theme 'monokai 1)
 
-(require 'recentf)
-(recentf-mode 1)
-(setq recentf-max-menu-items 20)
+(add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/solarized-emacs")
+;;(package-install 'solarized-theme)
+(require 'solarized)
+(load-theme 'solarized-dark t)
 
 (setq mac-option-modifier 'meta
       mac-command-modifier 'super)
 
+(global-set-key (kbd "s-c") 'kill-ring-save)
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-v") 'yank)
 (global-set-key (kbd "s-z") 'undo)
 
 ;;(icomplete-mode 1)
+
+(global-auto-revert-mode t)
+(setq auto-save-default nil)
 
 (defun open-init-file()
   (interactive)
