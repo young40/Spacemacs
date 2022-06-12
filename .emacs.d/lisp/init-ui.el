@@ -1,6 +1,12 @@
 (use-package monokai-pro-theme :ensure t :config (load-theme 'monokai-pro t))
 ;; (use-package monokai-theme :ensure t :config (load-theme 'monokai t))
 
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook)
+  )
+
 (use-package rainbow-identifiers
   :ensure t
   :init
