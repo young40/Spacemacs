@@ -6,6 +6,10 @@
 (require 'init-completion)
 (require 'init-evil)
 
+(use-package helm)
+
+(require 'init-keybindings)
+
 (use-package restart-emacs
   :ensure t)
 
@@ -31,6 +35,7 @@
 
 (package-install 'monokai-theme)
 (load-theme 'monokai 1)
+
 
 (add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/solarized-emacs")
 ;;(package-install 'solarized-theme)
