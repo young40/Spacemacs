@@ -8,4 +8,6 @@
   (setq company-minimum-prefix-length 1)
   (setq company-idle-delay 0))
 
+(icomplete-mode t)
+
 (provide 'init-completion)

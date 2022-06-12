@@ -18,4 +18,7 @@
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 
+(use-package helm)
+(use-package restart-emacs :ensure t)
+
 (provide 'init-packages)
