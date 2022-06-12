@@ -2,14 +2,18 @@
 
 (setq package-archives
       '(
-	("gnu" . "https://elpa.gnu.org/packages/")
-	("melpa" . "https://melpa.org/packages/")
+	("gnu"    . "https://elpa.gnu.org/packages/")
+	("nongnu" . "https://elpa.nongnu.org/nongnu/")
+	("melpa"  . "https://melpa.org/packages/")
 	))
 
 (package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
+
+(assq-delete-all 'org package--builtins)
+(assq-delete-all 'org package--builtin-versions)
 
 (unless (package-installed-p 'use-package)
    (package-refresh-contents)

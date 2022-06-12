@@ -7,6 +7,7 @@
 (require 'init-evil)
 (require 'init-tools)
 (require 'init-ui)
+(require 'init-org)
 (require 'init-keybindings)
 
 ;; (package-install 'keycast)
