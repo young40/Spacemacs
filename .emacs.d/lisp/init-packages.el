@@ -1,26 +1,22 @@
 (require 'package)
 
-(setq package-archives '(
-			 ("gnu" . "https://elpa.gnu.org/packages/")
-			 ("melpa" . "https://melpa.org/packages/")
-			 ))
+(setq package-archives
+      '(
+	("gnu" . "https://elpa.gnu.org/packages/")
+	("melpa" . "https://melpa.org/packages/")
+	))
 
 (package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(package-install 'use-package)
-
-(use-package restart-emacs
-  :ensure t)
-
-(require 'use-package-ensure)
-(setq use-package-always-ensure t)
-
 (unless (package-installed-p 'use-package)
    (package-refresh-contents)
    (package-install 'use-package))
+
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
 
 (use-package company
   :bind (:map company-active-map
@@ -32,11 +28,7 @@
   (setq company-minimum-prefix-length 1)
   (setq company-idle-delay 0))
 
-
-
-
-(require 'restart-emacs)
-
-
+(use-package restart-emacs
+  :ensure t)
 
 (provide 'init-packages)
