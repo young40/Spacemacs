@@ -7,6 +7,7 @@
 
 (my-leader-def 'normal
   "SPC" 'helm-M-x
+  "bb" 'helm-mini
   )
 
 (provide 'init-keybindings)
