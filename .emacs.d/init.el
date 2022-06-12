@@ -2,6 +2,8 @@
 
 (require 'init-basic)
 (require 'init-packages)
+
+(require 'init-completion)
 (require 'init-evil)
 
 (use-package restart-emacs
@@ -44,8 +46,10 @@
 (global-set-key (kbd "s-z") 'undo)
 (global-set-key (kbd "s-r") 'restart-emacs)
 
+(global-set-key (kbd "s-d") 'split-window-horizontally)
+(global-set-key (kbd "s-D") 'split-window-vertically)
 (global-set-key (kbd "s-.") 'evil-window-next)
-(global-set-key (kbd "s-/") 'split-window-horizontally)
+(global-set-key (kbd "s-w") 'delete-window)
 
 ;;(icomplete-mode 1)
 
