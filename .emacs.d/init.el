@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/dot/Spacemacs/.emacs.d/lisp")
 
+(require 'init-basic)
 (require 'init-packages)
-
 (require 'init-evil)
 
 (use-package restart-emacs
@@ -26,11 +26,6 @@
 (package-install 'consult)
 (global-set-key (kbd "C-s") 'consult-line)
 
-(setq make-backup-files nil)
-
-(delete-selection-mode 1)
-
-(global-hl-line-mode 1)
 
 (package-install 'monokai-theme)
 (load-theme 'monokai 1)
@@ -49,10 +44,11 @@
 (global-set-key (kbd "s-z") 'undo)
 (global-set-key (kbd "s-r") 'restart-emacs)
 
+(global-set-key (kbd "s-.") 'evil-window-next)
+(global-set-key (kbd "s-/") 'split-window-horizontally)
+
 ;;(icomplete-mode 1)
 
-(global-auto-revert-mode t)
-(setq auto-save-default nil)
 
 (defun open-init-file()
   (interactive)
@@ -60,9 +56,9 @@
 (global-set-key (kbd "s-e") 'open-init-file)
 
 
-(fset 'gnus-yes-or-no-p 'y-or-n-p)
 
 (set-face-attribute 'default nil :height 160)
+
 ;;让鼠标滚动更好用
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
