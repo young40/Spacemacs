@@ -8,9 +8,9 @@
   (setq dashboard-center-content t
 	dashboard-show-shortcuts t
 	dashboard-items '(
-			  (recents . 3)
+			  (recents   . 20)
 			  (bookmarks . 5)
-			  (projects  . 10)
+			  ;; (projects  . 10)
 			  (agenda    . 5)
 			  (registers . 5)
 			  )
