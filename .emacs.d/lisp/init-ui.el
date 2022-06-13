@@ -5,6 +5,16 @@
   :ensure t
   :config
   (dashboard-setup-startup-hook)
+  (setq dashboard-center-content t
+	dashboard-show-shortcuts t
+	dashboard-items '(
+			  (recents . 3)
+			  (bookmarks . 5)
+			  (projects  . 10)
+			  (agenda    . 5)
+			  (registers . 5)
+			  )
+	)
   )
 
 (use-package rainbow-identifiers
