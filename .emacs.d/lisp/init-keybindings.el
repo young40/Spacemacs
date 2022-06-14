@@ -11,6 +11,7 @@
   "bb" 'helm-mini
   "bh" 'dashboard-goto-homepage
 
+  "cl" 'comment-line
   )
 
 
