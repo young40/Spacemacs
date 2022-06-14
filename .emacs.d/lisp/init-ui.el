@@ -1,6 +1,6 @@
 ;; (use-package monokai-pro-theme :ensure t :config (load-theme 'monokai-pro t))
 
-;; (setq monokai-highlight-line "#A0C55B")
+(setq monokai-highlight-line "#556B2F")
 (use-package monokai-theme :ensure t :config (load-theme 'monokai t))
 
 ;; (use-package flucui-themes :ensure t :config (flucui-themes-load-style 'dark))
