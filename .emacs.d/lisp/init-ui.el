@@ -1,6 +1,6 @@
 ;; (use-package monokai-pro-theme :ensure t :config (load-theme 'monokai-pro t))
-;; (use-package monokai-theme :ensure t :config (load-theme 'monokai t))
-(use-package flucui-themes :ensure t :config (flucui-themes-load-style 'dark))
+(use-package monokai-theme :ensure t :config (load-theme 'monokai t))
+;; (use-package flucui-themes :ensure t :config (flucui-themes-load-style 'dark))
 
 (use-package dashboard
   :ensure t

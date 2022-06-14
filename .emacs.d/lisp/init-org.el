@@ -29,7 +29,12 @@
   (setq default-input-method 'pyim)
   (setq pyim-page-length 9)
   (setq pyim-english-input-switch-functions '(pyim-chinese-probe))
+  (setq-default pyim-punctuation-translate-p '(no))
+  (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")))
   )
+
+(defun my/org-blackfriday-escape-chars-in-equation (str)
+  str)
 
 (use-package ox-hugo
   :ensure t

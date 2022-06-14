@@ -12,6 +12,8 @@
 (require 'init-org)
 (require 'init-keybindings)
 
+(require 'org-ox-hugo-auto-export-mode)
+
 ;; (package-install 'keycast)
 ;; (keycast-mode t)
 
