@@ -6,9 +6,11 @@
   :prefix "SPC")
 
 (my-leader-def 'normal
-  "SPC" 'helm-M-x
+  ;; "SPC" 'helm-M-x
+  "SPC" 'counsel-M-x
 
-  "bb" 'helm-mini
+  ;; "bb" 'helm-mini
+  "bb" 'ivy-switch-buffer
   "bh" 'dashboard-goto-homepage
 
   "cl" 'comment-line
