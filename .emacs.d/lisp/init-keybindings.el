@@ -14,10 +14,6 @@
   "cl" 'comment-line
   )
 
-
-; (define-key evil-normal-state-map (kbd "C-j") (lambda () (interactive) (evil-scroll-down nil)))
-; (define-key evil-normal-state-map (kbd "C-k") (lambda () (interactive) (evil-scroll-up   nil)))
-
 (global-set-key (kbd "s-c") 'kill-ring-save)
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-v") 'yank)

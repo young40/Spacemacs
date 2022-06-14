@@ -6,7 +6,6 @@
 (delete-selection-mode 1)
 (global-hl-line-mode 1)
 
-(global-auto-revert-mode t)
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 

@@ -6,14 +6,10 @@
   :hook(after-init . save-place-mode)
   )
 
-;; 文件管理
-;; (use-package dired
-;;   :ensure t
-;;   :bind(( :map dired-mode-map
-;; 	  ("i" . dired)
-;; 	 )
-
-;; 	)
-;;   )
+(use-package autorevert
+  :ensure t
+  :diminish
+  :hook(after-init . global-auto-revert-mode)
+  )
 
 (provide 'init-packages)

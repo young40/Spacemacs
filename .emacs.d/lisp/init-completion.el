@@ -3,8 +3,7 @@
   :bind (:map company-active-map
 	      ("C-n" . 'company-select-next)
 	      ("C-p" . 'company-select-previous))
-  :init
-  (global-company-mode t)
+  :hook(after-init . global-company-mode)
   :config
   (setq company-minimum-prefix-length 1)
   (setq company-idle-delay 0))
