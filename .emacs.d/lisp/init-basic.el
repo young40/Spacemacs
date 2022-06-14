@@ -10,6 +10,6 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 
-(fset 'gnus-yes-or-no-p 'y-or-n-p)
+(fset 'yes-or-no-p 'y-or-n-p)
 
 (provide 'init-basic)
