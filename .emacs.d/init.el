@@ -58,7 +58,7 @@
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
-(setq custom-file (expand-file-name "/Users/young40/dot/Spacemacs/.emacs.d/custom.el"))
+(setq custom-file (expand-file-name "/Users/young40/dot/Spacemacs/.emacs.d/cache/custom.el"))
 (load custom-file 'no-error 'no-message)
 
 (provide 'init)

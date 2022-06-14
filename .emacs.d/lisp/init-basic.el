@@ -11,4 +11,6 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(savehist-mode t)
+
 (provide 'init-basic)
