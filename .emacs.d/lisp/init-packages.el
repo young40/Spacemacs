@@ -1,4 +1,5 @@
-(use-package helm)
+(use-package helm
+  :ensure t)
 
 (use-package saveplace
   :ensure t

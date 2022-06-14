@@ -13,8 +13,6 @@
 
   )
 
-(setq mac-option-modifier 'meta
-      mac-command-modifier 'super)
 
 ; (define-key evil-normal-state-map (kbd "C-j") (lambda () (interactive) (evil-scroll-down nil)))
 ; (define-key evil-normal-state-map (kbd "C-k") (lambda () (interactive) (evil-scroll-up   nil)))

@@ -2,21 +2,6 @@
 (use-package monokai-theme :ensure t :config (load-theme 'monokai t))
 ;; (use-package flucui-themes :ensure t :config (flucui-themes-load-style 'dark))
 
-(use-package dashboard
-  :ensure t
-  :config
-  (dashboard-setup-startup-hook)
-  (setq dashboard-center-content t
-	dashboard-show-shortcuts t
-	dashboard-items '(
-			  (recents   . 20)
-			  (bookmarks . 5)
-			  ;; (projects  . 10)
-			  (agenda    . 5)
-			  (registers . 5)
-			  )
-	)
-  )
 
 (use-package rainbow-identifiers
   :ensure t
@@ -34,17 +19,17 @@
   ;; )
 
 ;;modeline上显示我的所有的按键和执行的命令
-(package-install 'keycast)
-(add-to-list 'global-mode-string '("" keycast-mode-line))
-(keycast-mode t)
+;; (package-install 'keycast)
+;; (add-to-list 'global-mode-string '("" keycast-mode-line))
+;; (keycast-mode t)
 
-(use-package doom-modeline
-  :ensure t
-  :custom-face
-(mode-line ((t (:height 0.9))))
-(mode-line-inactive ((t (:height 0.9))))
-  :init
-  (doom-modeline-mode t))
+;; (use-package doom-modeline
+;;   :ensure t
+;;   :custom-face
+;; (mode-line ((t (:height 0.9))))
+;; (mode-line-inactive ((t (:height 0.9))))
+;;   :init
+;;   (doom-modeline-mode t))
 
 (add-hook 'prog-mode-hook 'linum-mode)
 
