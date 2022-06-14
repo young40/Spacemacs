@@ -25,9 +25,12 @@
   ;; )
 
 ;;modeline上显示我的所有的按键和执行的命令
-(package-install 'keycast)
-(add-to-list 'global-mode-string '("" keycast-mode-line))
-(keycast-mode t)
+(use-package keycast
+  :ensure t
+  :init
+  (add-to-list 'global-mode-string '("" keycast-mode-line))
+  (keycast-mode t)
+  )
 
 ;; (use-package doom-modeline
 ;;   :ensure t

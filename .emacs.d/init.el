@@ -1,8 +1,8 @@
 ;; (message "init.")
 
-(add-to-list 'load-path "~/dot/Spacemacs/.emacs.d/lisp")
-;; (add-to-list 'load-path (directory-file-name
-;;                         (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
+(defconst *isMacOS* (eq system-type 'darwin))
 
 (require 'init-use-package)
 (require 'init-basic)
