@@ -20,24 +20,24 @@
 ;; (package-install 'keycast)
 ;; (keycast-mode t)
 
-(package-install 'vertico)
-(vertico-mode t)
+;; (package-install 'vertico)
+;; (vertico-mode t)
 
-(package-install 'orderless)
-(setq completion-styles '(orderless))
+;; (package-install 'orderless)
+;; (setq completion-styles '(orderless))
 
-(package-install 'marginalia)
-(marginalia-mode t)
+;; (package-install 'marginalia)
+;; (marginalia-mode t)
 
-(package-install 'embark)
-(global-set-key (kbd "C-;") 'embark-act)
-(setq prefix-help-command 'embark-prefix-help-command)
+;; (package-install 'embark)
+;; (global-set-key (kbd "C-;") 'embark-act)
+;; (setq prefix-help-command 'embark-prefix-help-command)
 
-(package-install 'consult)
-(global-set-key (kbd "C-s") 'consult-line)
+;; (package-install 'consult)
+;; (global-set-key (kbd "C-s") 'consult-line)
 
 
-(add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/solarized-emacs")
+;; (add-to-list 'load-path "/Users/young40/dot/Spacemacs/.emacs.d/solarized-emacs")
 ;;(package-install 'solarized-theme)
 ;;(require 'solarized)
 ;;(load-theme 'solarized-dark t)
