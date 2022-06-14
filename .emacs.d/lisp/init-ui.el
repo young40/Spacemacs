@@ -5,11 +5,14 @@
 
 ;; (use-package flucui-themes :ensure t :config (flucui-themes-load-style 'dark))
 
+(use-package rainbow-mode
+  :ensure t
+  :hook(prog-mode . rainbow-mode)
+  )
 
 (use-package rainbow-identifiers
   :ensure t
-  :init
-  (progn (add-hook 'prog-mode-hook 'rainbow-identifiers-mode))
+  :hook(prog-mode . rainbow-identifiers-mode)
   )
 
 ;; (use-package powerline-evil
@@ -22,9 +25,9 @@
   ;; )
 
 ;;modeline上显示我的所有的按键和执行的命令
-;; (package-install 'keycast)
-;; (add-to-list 'global-mode-string '("" keycast-mode-line))
-;; (keycast-mode t)
+(package-install 'keycast)
+(add-to-list 'global-mode-string '("" keycast-mode-line))
+(keycast-mode t)
 
 ;; (use-package doom-modeline
 ;;   :ensure t
@@ -33,6 +36,12 @@
 ;; (mode-line-inactive ((t (:height 0.9))))
 ;;   :init
 ;;   (doom-modeline-mode t))
+
+;; 高亮TODO
+(use-package hl-todo
+  :ensure t
+  :hook((prog-mode org-mode) . hl-todo-mode)
+  )
 
 (add-hook 'prog-mode-hook 'linum-mode)
 

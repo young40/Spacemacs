@@ -1,4 +1,4 @@
-(server-mode t)
+;; (server-mode t)
 
 (electric-pair-mode t)
 (show-paren-mode t)
