@@ -24,6 +24,12 @@
   ;; (powerline-evil-vim-theme)
   ;; )
 
+(use-package smart-mode-line
+  :ensure t
+  :init
+  (sml/setup)
+  )
+
 ;;modeline上显示我的所有的按键和执行的命令
 (use-package keycast
   :ensure t
