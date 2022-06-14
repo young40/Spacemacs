@@ -25,4 +25,10 @@
 (use-package counsel
   :ensure t)
 
+(use-package amx
+  :ensure t
+  :init
+  (amx-mode)
+  )
+
 (provide 'init-packages)

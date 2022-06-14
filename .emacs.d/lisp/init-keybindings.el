@@ -14,6 +14,8 @@
   "bh" 'dashboard-goto-homepage
 
   "cl" 'comment-line
+
+  "ff" 'counsel-find-file
   )
 
 (global-set-key (kbd "s-c") 'kill-ring-save)
