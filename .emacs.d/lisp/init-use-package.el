@@ -42,9 +42,9 @@
 	)
   )
 
-;; TODO 检查系统是否为macOS
-(setq mac-command-modifier 'super
-      mac-option-modifier  'meta)
+(when *isMacOS*
+  (setq mac-command-modifier 'super
+	mac-option-modifier  'meta))
 
 (use-package restart-emacs :ensure t)
 (global-set-key (kbd "s-0") 'restart-emacs)
