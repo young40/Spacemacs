@@ -24,6 +24,8 @@
   "pk"  'projectile-kill-buffers
 
   "rr"  'eval-defun
+
+  "tm"  'toggle-frame-maximized
   )
 
 (global-set-key (kbd "s-c") 'kill-ring-save)
