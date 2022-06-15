@@ -15,5 +15,6 @@
 (savehist-mode t)
 
 (setq recentf-save-file (expand-file-name "recentf" *ewc*))
+(setq bookmark-file (expand-file-name "bookmarks" *ewc*))
 
 (provide 'init-basic)
