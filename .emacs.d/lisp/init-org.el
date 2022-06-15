@@ -6,9 +6,9 @@
   :ensure t
   :hook(org-mode . (lambda() (toggle-input-method)))
   :config
-  (add-hook 'org-mode-hook (lambda ()
-			     (local-set-key (kbd "s-r") 'org-hugo-export-to-md)
-			     ))
+  ;; (add-hook 'org-mode-hook (lambda ()
+			     ;; (local-set-key (kbd "s-r") 'org-hugo-export-to-md) ;; 暂时没什么用
+			     ;; ))
   
   (setq org-pretty-entities t
 	org-hide-leading-stars t

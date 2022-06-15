@@ -21,6 +21,7 @@
   "hv"  'describe-variable
 
   "pp"  'counsel-projectile-switch-project
+  "pk"  'projectile-kill-buffers
 
   "rr"  'eval-defun
   )
