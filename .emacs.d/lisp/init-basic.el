@@ -16,5 +16,9 @@
 
 (setq recentf-save-file (expand-file-name "recentf" *ewc*))
 (setq bookmark-file (expand-file-name "bookmarks" *ewc*))
+(setq save-place-file (expand-file-name "places" *ewc*))
+(setq savehist-file (expand-file-name "savehist-file-history" *ewc*))
+(setq auto-save-list-file-prefix (expand-file-name ".save-" (expand-file-name "auto-save-list" *ewc*)))
+(setq package-user-dir (expand-file-name "elpa" "/Users/young40/dot/Spacemacs/.emacs.d/cache"))
 
 (provide 'init-basic)

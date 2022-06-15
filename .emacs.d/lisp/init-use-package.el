@@ -6,6 +6,8 @@
 	("nongnu" . "https://elpa.nongnu.org/nongnu/")
 	("melpa"  . "https://melpa.org/packages/")
 	))
+;; 必须在package初始化前设置
+(setq package-user-dir (expand-file-name "elpa" *ewc*))
 
 (package-initialize)
 
