@@ -3,7 +3,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (defconst *isMacOS* (eq system-type 'darwin))
-(defconst *ewc* (concat user-emacs-directory "cache"))
+(defconst *ewc* (file-name-as-directory (concat user-emacs-directory "cache")))
 
 (require 'init-use-package)
 (require 'init-basic)

@@ -14,4 +14,6 @@
 
 (savehist-mode t)
 
+(setq recentf-save-file (expand-file-name "recentf" *ewc*))
+
 (provide 'init-basic)
