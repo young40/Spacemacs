@@ -3,6 +3,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (defconst *isMacOS* (eq system-type 'darwin))
+(defconst *ewc* (concat user-emacs-directory "cache"))
 
 (require 'init-use-package)
 (require 'init-basic)
@@ -45,7 +46,7 @@
 
 (defun open-init-file()
   (interactive)
-  (find-file "/Users/young40/dot/Spacemacs/.emacs.d/init.el"))
+  (find-file (concat user-emacs-directory "init.el")))
 (global-set-key (kbd "s-e") 'open-init-file)
 
 
@@ -58,7 +59,7 @@
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
-(setq custom-file (expand-file-name "/Users/young40/dot/Spacemacs/.emacs.d/cache/custom.el"))
+(setq custom-file (expand-file-name (concat *ewc* "custom.el")))
 (load custom-file 'no-error 'no-message)
 
 (provide 'init)
