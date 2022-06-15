@@ -51,6 +51,7 @@
   :hook((prog-mode org-mode) . hl-todo-mode)
   )
 
-(add-hook 'prog-mode-hook 'linum-mode)
+;; 配置group  '(line-number-current-line ((t (:inherit default :background "dark olive green" :foreground "tomato" :underline nil))))
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 (provide 'init-ui)
