@@ -17,6 +17,9 @@
 
   "ff"  'counsel-find-file
 
+  "hk"  'describe-key
+  "hv"  'describe-variable
+
   "pp"  'counsel-projectile-switch-project
   )
 

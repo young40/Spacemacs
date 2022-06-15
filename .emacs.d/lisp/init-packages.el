@@ -39,6 +39,9 @@
 
 (use-package projectile
   :ensure t
+  :init
+  (setq projectile-cache-file (expand-file-name "projectile.cache" *ewc*)
+	projectile-known-projects-file (expand-file-name "projectile-bookmarks.eld" *ewc*))
   :config
   ;; (setq projectile-mode-line "Projectile")
   (setq projectile-track-known-projects-automatically t))
