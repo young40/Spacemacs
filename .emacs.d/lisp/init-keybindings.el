@@ -21,6 +21,8 @@
   "hv"  'describe-variable
 
   "pp"  'counsel-projectile-switch-project
+
+  "rr"  'eval-defun
   )
 
 (global-set-key (kbd "s-c") 'kill-ring-save)
@@ -28,8 +30,20 @@
 (global-set-key (kbd "s-v") 'yank)
 (global-set-key (kbd "s-z") 'undo)
 
-(global-set-key (kbd "s-d") 'split-window-horizontally)
-(global-set-key (kbd "s-D") 'split-window-vertically)
+(defun split-window-h-focus()
+  (interactive)
+  (split-window-right)
+  (windmove-right)
+  )
+
+(defun split-window-v-focus()
+  (interactive)
+  (split-window-below)
+  (windmove-down)
+  )
+
+(global-set-key (kbd "s-d") 'split-window-h-focus)
+(global-set-key (kbd "s-D") 'split-window-v-focus)
 (global-set-key (kbd "s-.") 'evil-window-next)
 (global-set-key (kbd "s-。") 'evil-window-next)
 (global-set-key (kbd "s-w") 'delete-window)
@@ -37,7 +51,6 @@
 (global-set-key (kbd "s-/") 'comment-line)
 
 (global-set-key (kbd "s-k") 'pyim-chinese-switch)
-(global-set-key (kbd "s-r") 'org-hugo-export-to-md)
 
 (define-key y-or-n-p-map [return] 'act)
 

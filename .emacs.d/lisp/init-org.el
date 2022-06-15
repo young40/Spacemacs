@@ -6,6 +6,10 @@
   :ensure t
   :hook(org-mode . (lambda() (toggle-input-method)))
   :config
+  (add-hook 'org-mode-hook (lambda ()
+			     (local-set-key (kbd "s-r") 'org-hugo-export-to-md)
+			     ))
+  
   (setq org-pretty-entities t
 	org-hide-leading-stars t
 	org-list-allow-alphabetical t
@@ -33,6 +37,7 @@
 (use-package pyim
   :ensure t
   :config
+  (setq pyim-indicator-modeline-string '("中文", "英文"))
   (setq pyim-dcache-directory (expand-file-name "dcache" (expand-file-name "pyim" *ewc*)))
   (setq default-input-method 'pyim)
   (setq pyim-page-length 9)
