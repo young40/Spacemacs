@@ -33,6 +33,7 @@
 (use-package pyim
   :ensure t
   :config
+  (setq pyim-dcache-directory (expand-file-name "dcache" (expand-file-name "pyim" *ewc*)))
   (setq default-input-method 'pyim)
   (setq pyim-page-length 9)
   (setq pyim-english-input-switch-functions '(pyim-chinese-probe))
