@@ -51,4 +51,12 @@
   :after (projectile)
   :init (counsel-projectile-mode))
 
+(use-package yasnippet
+  :ensure t
+  :hook((prog-mode org-mode) . yas-minor-mode)
+  :config
+  ;; (setq-default yas-snippet-dirs (list (expand-file-name "snippets" user-emacs-directory))) ;; 该目录无需设置即可启用
+  (use-package yasnippet-snippets :ensure t)
+  )
+
 (provide 'init-packages)
