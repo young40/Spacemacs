@@ -41,8 +41,8 @@
 (use-package doom-modeline
   :ensure t
   :custom-face
-  (mode-line ((t (:height 0.9))))
-  (mode-line-inactive ((t (:height 0.9))))
+  ;; (mode-line ((t (:height 0.9))))
+  ;; (mode-line-inactive ((t (:height 0.9))))
   :hook(after-init . doom-modeline-mode))
 
 ;; 高亮TODO
