@@ -6,10 +6,15 @@ The exporting happens only when Org Capture is not in progress."
       (save-excursion
 	(org-hugo-export-wim-to-md)))
 
+    (if (buffer-file-name)
+	(progn
+	  (setq ox_my_b_md_name (string-replace ".org" ".md" buffer-file-name))
+	  (setq ox_my_b_md_name (string-replace "/org/" "/content/post/" ox_my_b_md_name))))
+
+    (message ox_my_b_md_name)
 
     (let ((default-directory "/Users/young40/Work/Young40Blog/tools/OxHugoMarkdownForZhihu/bin/Debug/net6.0/publish")) 
-       (shell-command "./OxHugoMarkdownForZhihu")
-      )
+      (shell-command (concat "./OxHugoMarkdownForZhihu " (shell-quote-argument ox_my_b_md_name))))
 
     (message "ox-hugo export to markdown done.")
   )
