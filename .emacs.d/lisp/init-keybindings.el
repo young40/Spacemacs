@@ -6,18 +6,18 @@
   :prefix "SPC")
 
 (my-leader-def 'normal
-  ;; "SPC" 'helm-M-x
-  "SPC" 'counsel-M-x
+  "`"   'counsel-M-x
+  "q"   'counsel-M-x
 
-  ;; "bb" 'helm-mini
-  "bb" 'ivy-switch-buffer
-  "bh" 'dashboard-goto-homepage
+  "bb"  'ivy-switch-buffer
+  "SPC" 'ivy-switch-buffer
+  "bh"  'dashboard-goto-homepage
 
-  "cl" 'comment-line
+  "cl"  'comment-line
 
-  "ff" 'counsel-find-file
+  "ff"  'counsel-find-file
 
-  "pp" 'counsel-projectile-switch-project
+  "pp"  'counsel-projectile-switch-project
   )
 
 (global-set-key (kbd "s-c") 'kill-ring-save)

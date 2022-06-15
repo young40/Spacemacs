@@ -28,7 +28,7 @@
 (use-package amx
   :ensure t
   :init
-  (setq amx-save-file (expand-file-name (concat *ewc* "amx-items")))
+  (setq amx-save-file (expand-file-name "amx-items" *ewc*))
   :config
   (amx-mode)
   )
