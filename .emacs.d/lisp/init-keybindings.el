@@ -16,6 +16,8 @@
   "cl" 'comment-line
 
   "ff" 'counsel-find-file
+
+  "pp" 'counsel-projectile-switch-project
   )
 
 (global-set-key (kbd "s-c") 'kill-ring-save)

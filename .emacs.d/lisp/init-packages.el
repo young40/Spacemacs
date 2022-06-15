@@ -31,4 +31,19 @@
   (amx-mode)
   )
 
+(use-package which-key
+  :ensure t
+  :init(which-key-mode t))
+
+(use-package projectile
+  :ensure t
+  :config
+  ;; (setq projectile-mode-line "Projectile")
+  (setq projectile-track-known-projects-automatically t))
+
+(use-package counsel-projectile
+  :ensure t
+  :after (projectile)
+  :init (counsel-projectile-mode))
+
 (provide 'init-packages)

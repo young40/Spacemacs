@@ -24,11 +24,11 @@
   ;; (powerline-evil-vim-theme)
   ;; )
 
-(use-package smart-mode-line
-  :ensure t
-  :init
-  (sml/setup)
-  )
+;; (use-package smart-mode-line
+;;   :ensure t
+;;   :init
+;;   (sml/setup)
+;;   )
 
 ;;modeline上显示我的所有的按键和执行的命令
 (use-package keycast
@@ -38,13 +38,12 @@
   (keycast-mode t)
   )
 
-;; (use-package doom-modeline
-;;   :ensure t
-;;   :custom-face
-;; (mode-line ((t (:height 0.9))))
-;; (mode-line-inactive ((t (:height 0.9))))
-;;   :init
-;;   (doom-modeline-mode t))
+(use-package doom-modeline
+  :ensure t
+  :custom-face
+  (mode-line ((t (:height 0.9))))
+  (mode-line-inactive ((t (:height 0.9))))
+  :hook(after-init . doom-modeline-mode))
 
 ;; 高亮TODO
 (use-package hl-todo

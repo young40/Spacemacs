@@ -67,6 +67,7 @@ This function should only modify configuration layer settings."
               )
      (colors :variables
              colors-colorize-identifiers 'all)
+     command-log
      docker
      emoji
      ;; git

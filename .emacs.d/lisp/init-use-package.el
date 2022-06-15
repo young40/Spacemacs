@@ -32,10 +32,11 @@
   (dashboard-setup-startup-hook)
   (setq dashboard-center-content t
 	dashboard-show-shortcuts t
+	dashboard-projects-backend 'projectile
 	dashboard-items '(
 			  (recents   . 20)
+			  (projects  . 10)
 			  (bookmarks . 5)
-			  ;; (projects  . 10)
 			  (agenda    . 5)
 			  (registers . 5)
 			  )
