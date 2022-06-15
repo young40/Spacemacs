@@ -4,7 +4,7 @@
 (show-paren-mode t)
 
 ;; (delete-selection-mode 1)
-(global-hl-line-mode 1)
+;; (global-hl-line-mode 1)
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)

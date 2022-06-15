@@ -5,6 +5,9 @@
 	evil-want-keybinding nil
 	evil-want-C-u-scroll t)
   :config
+  (add-hook 'evil-insert-state-entry-hook (lambda() (setq-local hl-line-mode nil)))
+  (add-hook 'evil-insert-state-exit-hook  (lambda() (hl-line-mode t)))
+  (add-hook 'evil-normal-state-entry-hook (lambda() (hl-line-mode t)))
   (evil-mode)
   )
 
