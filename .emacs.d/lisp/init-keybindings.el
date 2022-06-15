@@ -32,6 +32,8 @@
 (global-set-key (kbd "s-s") 'save-buffer)
 (global-set-key (kbd "s-v") 'yank)
 (global-set-key (kbd "s-z") 'undo)
+(global-set-key (kbd "s-Z") 'redo)
+(global-set-key (kbd "s-q") 'save-buffers-kill-emacs)
 
 (defun split-window-h-focus()
   (interactive)

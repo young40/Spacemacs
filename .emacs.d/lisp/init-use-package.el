@@ -49,7 +49,7 @@
   (setq mac-command-modifier 'super
 	mac-option-modifier  'meta))
 
-(use-package restart-emacs :ensure t)
+(use-package restart-emacs :ensure t :config (setq restart-emacs-restore-frames t))
 (global-set-key (kbd "s-0") 'restart-emacs)
 
 (provide 'init-use-package)
