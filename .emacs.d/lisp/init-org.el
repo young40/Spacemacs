@@ -39,7 +39,10 @@
   :init
   (use-package popup
     :ensure t)
+  (use-package pyim-basedict
+    :ensure t)
   :config
+  (pyim-basedict-enable)
   (setq pyim-page-tooltip 'popup)
   (setq pyim-indicator-modeline-string '("中文", "英文"))
   (setq pyim-dcache-directory (expand-file-name "dcache" (expand-file-name "pyim" *ewc*)))
