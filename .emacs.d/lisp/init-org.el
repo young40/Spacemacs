@@ -38,7 +38,7 @@
   :ensure t
   :init
   (use-package popup
-    :ensure)
+    :ensure t)
   :config
   (setq pyim-page-tooltip 'popup)
   (setq pyim-indicator-modeline-string '("中文", "英文"))
@@ -48,7 +48,7 @@
   (setq pyim-english-input-switch-functions '(pyim-chinese-probe))
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-dicts '(
-		     (:name "personal"  :file "~/dot/Spacemacs/.emacs.d/pyim/personal.words")
+		     ;; (:name "personal"  :file "~/dot/Spacemacs/.emacs.d/pyim/personal.words")
 		     (:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
 		     ))
   )
