@@ -48,8 +48,8 @@
   (setq pyim-english-input-switch-functions '(pyim-chinese-probe))
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-dicts '(
+		     (:name "personal"  :file "~/dot/Spacemacs/.emacs.d/pyim/personal.words")
 		     (:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
-		     ;; (:name "tsinghua"  :file (expand-file-name "pyim-tsinghua-dict.pyim" (expand-file-name "pyim" user-emacs-directory)))
 		     ))
   )
 
