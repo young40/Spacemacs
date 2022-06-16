@@ -18,11 +18,14 @@
 
   "ff"  'counsel-find-file
 
+  "hf"  'describe-function
   "hk"  'describe-key
   "hv"  'describe-variable
 
-  "pp"  'counsel-projectile-switch-project
+  "pe"  'pyim-export-personal-words-to-file
+
   "pk"  'projectile-kill-buffers
+  "pp"  'counsel-projectile-switch-project
 
   "rr"  'eval-defun
 
