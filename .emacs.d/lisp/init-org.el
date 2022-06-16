@@ -48,8 +48,9 @@
   (setq pyim-english-input-switch-functions '(pyim-chinese-probe))
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-dicts '(
+		     (:name "搜狗标准"  :file "~/dot/Spacemacs/.emacs.d/pyim/sougou-standard.pyim")
 		     ;; (:name "personal"  :file "~/dot/Spacemacs/.emacs.d/pyim/personal.words")
-		     (:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
+		     ;; (:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
 		     ))
   )
 
