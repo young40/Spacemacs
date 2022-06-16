@@ -55,7 +55,7 @@
 
 (use-package ox-hugo
   :ensure t
-  :after org
+  :after ox
   )
 
 (use-package org-bullets
@@ -84,6 +84,15 @@
 			     (evil-normalize-keymaps)
 			     
 			     ))
+  )
+
+(use-package org-mac-link
+  :ensure nil
+  :load-path "third-party" 
+  :after org
+  :bind
+  (:map org-mode-map
+	("C-c g" . org-mac-grab-link))
   )
 
 (provide 'init-org)
