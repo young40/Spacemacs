@@ -36,7 +36,11 @@
 
 (use-package pyim
   :ensure t
+  :init
+  (use-package popup
+    :ensure)
   :config
+  (setq pyim-page-tooltip 'popup)
   (setq pyim-indicator-modeline-string '("中文", "英文"))
   (setq pyim-dcache-directory (expand-file-name "dcache" (expand-file-name "pyim" *ewc*)))
   (setq default-input-method 'pyim)
