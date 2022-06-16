@@ -64,8 +64,8 @@
 
 (define-key y-or-n-p-map [return] 'act)
 
-(eval-after-load "dired" '(progn
-			    (define-key dired-mode-map (kbd "i") 'dired-up-directory)
-			    ))
+;; (eval-after-load "dired" '(progn
+			    ;; (define-key dired-mode-map (kbd "i") 'dired-up-directory)
+			    ;; ))
 
 (provide 'init-keybindings)
