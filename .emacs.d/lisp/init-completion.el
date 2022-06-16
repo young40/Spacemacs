@@ -13,4 +13,14 @@
 
 ;; (icomplete-mode t)
 
+(use-package posframe
+  :ensure t)
+
+(use-package company-posframe
+  :ensure t
+  :after company
+  :config
+  (company-posframe-mode t)
+  )
+
 (provide 'init-completion)
