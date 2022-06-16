@@ -6,6 +6,7 @@
   :prefix "SPC")
 
 (my-leader-def 'normal
+  "/"   'counsel-ag
   "`"   'counsel-M-x
   "q"   'counsel-M-x
 
