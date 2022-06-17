@@ -22,6 +22,8 @@
   "hk"  'describe-key
   "hv"  'describe-variable
 
+  "oe"  'org-entities-help
+
   "pe"  'pyim-export-personal-words-to-file
   "pf"  'pyim-import-personal-words-from-file
 
