@@ -1,5 +1,5 @@
 (defun org-auto-export-html-to-file-after-save()
-  (org-html-export-as-html)
+  (org-html-export-to-html)
   )
 
 (define-minor-mode org-auto-export-html-mode
