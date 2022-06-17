@@ -31,6 +31,7 @@
   "rr"  'eval-defun
 
   "tm"  'toggle-frame-maximized
+  "te"  'org-toggle-pretty-entities
   )
 
 (global-set-key (kbd "s-c") 'kill-ring-save)
