@@ -21,7 +21,8 @@
 (setq auto-save-list-file-prefix (expand-file-name ".save-" (expand-file-name "auto-save-list" *ewc*)))
 (setq package-user-dir (expand-file-name "elpa" *ewc*))
 
-(recentf-mode t)
+(setq recentf-auto-cleanup nil)
 (setq recentf-max-saved-items 100)
+(recentf-mode t)
 
 (provide 'init-basic)
