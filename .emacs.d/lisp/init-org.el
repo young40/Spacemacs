@@ -94,6 +94,17 @@
   :ensure nil
   :load-path "third-party" 
   :after org
+  :config
+  (setq org-mac-grab-Mail-app-p nil
+       org-mac-grab-Outlook-app-p nil
+       org-mac-grab-devonthink-app-p nil
+       org-mac-grab-Addressbook-app-p nil
+       org-mac-grab-Firefox-app-p nil
+       org-mac-grab-Firefox+Vimperator-p nil
+       org-mac-grab-Chrome-app-p nil
+       org-mac-grab-Finder-app-p nil
+       org-mac-grab-Skim-app-p nil
+       )
   :bind
   (:map org-mode-map
 	("C-c g" . org-mac-grab-link))

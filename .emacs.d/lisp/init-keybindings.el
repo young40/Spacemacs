@@ -22,6 +22,8 @@
   "hk"  'describe-key
   "hv"  'describe-variable
 
+  "ll"  'org-mac-safari-insert-frontmost-url
+
   "oe"  'org-entities-help
 
   "pe"  'pyim-export-personal-words-to-file
