@@ -25,12 +25,10 @@
   "ll"  'org-mac-safari-insert-frontmost-url
 
   "oe"  'org-entities-help
+  "odx"  'pyim-export-personal-words-to-file
+  "odi"  'pyim-import-personal-words-from-file
 
-  "pe"  'pyim-export-personal-words-to-file
-  "pf"  'pyim-import-personal-words-from-file
-
-  "pk"  'projectile-kill-buffers
-  "pp"  'counsel-projectile-switch-project
+  "p"   'projectile-command-map
 
   "rr"  'eval-defun
 
