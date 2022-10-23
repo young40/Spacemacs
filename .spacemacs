@@ -125,7 +125,7 @@ This function should only modify configuration layer settings."
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
-                                      (solarized-theme :location (recipe :fetcher github :repo "bbatsov/solarized-emacs"))
+                                      ;;(solarized-theme :location (recipe :fetcher github :repo "bbatsov/solarized-emacs"))
 
                                       )
 
@@ -609,7 +609,7 @@ It should only modify the values of Spacemacs settings."
 
    dotspacemacs-enable-server t
    dotspacemacs-loading-progress-bar nil
-   dotspacemacs-themes '(solarized-dark
+   dotspacemacs-themes '(;;solarized-dark
                          spacemacs-dark
                          spacemacs-light)
 
@@ -622,11 +622,11 @@ It should only modify the values of Spacemacs settings."
 
    dotspacemacs-startup-buffer-show-icons t
 
-   configuration-layer-elpa-archives
-   '(("melpa-cn" . "https://mirror.nju.edu.cn/elpa/melpa/")
-     ("nongnu"   . "https://mirror.nju.edu.cn/elpa/nongnu/")
-     ("gnu-cn"   . "https://mirror.nju.edu.cn/elpa/gnu/")
-     )
+   ;;configuration-layer-elpa-archives
+   ;;'(("melpa-cn" . "https://mirror.nju.edu.cn/elpa/melpa/")
+   ;;  ("nongnu"   . "https://mirror.nju.edu.cn/elpa/nongnu/")
+   ;;  ("gnu-cn"   . "https://mirror.nju.edu.cn/elpa/gnu/")
+   ;;  )
 
    dotspacemacs-default-font '("Monaco"
                                :size 15
