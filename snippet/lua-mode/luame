@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: lua my file(luame)
+# key: luame
+# --
+--
+-- `(file-name-nondirectory (buffer-file-name))`
+--
+--
+-- Created by Yang Shiling(杨世玲) on `(format-time-string "%Y-%m-%d" (current-time))`.
+-- Copyright © `(format-time-string "%Y" (current-time))` Xianlai. All rights reserved.
+--

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: print traceback && exit(pde)
+# key: pde
+# --
+print(debug.traceback()); os.exit()

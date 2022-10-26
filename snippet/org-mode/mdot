@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mdot
+# key: mdot
+# --
+#+BEGIN_SRC dot :file ${1:file} :cmdline :cmdline -Kdot -Tpng
+$0
+#+END_SRC
+[[file:${3:path}]]

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lua warning TODO (luaw)
+# key: luaw
+# --
+-- TODO: ADD_WARNING_LOG

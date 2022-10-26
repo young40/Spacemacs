@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: print traceback(pdt)
+# key: pdt
+# --
+print(debug.traceback())

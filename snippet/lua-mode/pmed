@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: PureMVC Mediator(pmed)
+# key: pmed
+# --
+
+-- local UIEventListener = CS.CCM.UIEventListener
+
+local `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))` = class("`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`", PureMVC.Mediator)
+
+`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.NAME = `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.__cname
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:listNotificationInterests()
+--     return {
+--     }
+-- end
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:handleNotification(notification)
+-- end
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:onRegister()
+-- end
+
+-- function `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`:onRemove()
+-- end
+
+return `(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`

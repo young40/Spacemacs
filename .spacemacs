@@ -710,10 +710,26 @@ before packages are loaded."
   (defun pyim-chinese-probe() (not pyim-chinese-status))
 
   (global-set-key (kbd "H-k") 'pyim-chinese-switch)
+  (global-set-key (kbd "M-k") 'pyim-chinese-switch)
   (setq pyim-english-input-switch-functions
         '(pyim-chinese-probe))
 
   (add-to-list 'auto-mode-alist '("\\.asset$" . yaml-mode ))
+
+  (unbind-key "C-s" isearch-mode-map)
+  (bind-key* "C-s" #'save-buffer)
+  (bind-key* "M-s" #'save-buffer)
+
+  ;; Set proxy configurations in emacs
+  (setq url-proxy-services
+        '(("no_proxy" . "^\\(localhost\\|127.0.0.1\\)")
+          ("http" . "localhost:7890")
+          ("https" . "localhost:7890")))
+
+  ;; Set environment variables for shell to work
+  (setenv "no_proxy" "^\\(localhost\\|127.0.0.1\\)")
+  (setenv "http_proxy" "http://localhost:7890")
+  (setenv "https_proxy" "http://localhost:7890")
 
   ;; My Config Part3
 )

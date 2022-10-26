@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: blog more
+# key: more
+# --
+#+HUGO: MORE

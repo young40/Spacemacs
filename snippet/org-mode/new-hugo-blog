@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: new hugo blog post
+# key: hb
+# --
+#+TITLE: $1
+#+HUGO_TAGS:
+#+HUGO_CATEGORIES:
+#+DATE: `(format-time-string "%Y-%m-%dT%H:%M:%S+08:00" (current-time))`
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: true
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: post
+#+OPTIONS: author:nil
