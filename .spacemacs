@@ -691,6 +691,8 @@ before packages are loaded."
     :bindings
     (kbd "i") 'dired-jump)
 
+  (setq pyim-cloudim 'baidu)
+
   (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
                      ;; (:name "symbol" :file "~/dot/Spacemacs/pyim-symbol.pyim")
                      ))
