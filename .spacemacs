@@ -125,6 +125,7 @@ This function should only modify configuration layer settings."
    ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
+                                      org-mac-link
                                       ;;(solarized-theme :location (recipe :fetcher github :repo "bbatsov/solarized-emacs"))
 
                                       )
@@ -721,6 +722,9 @@ before packages are loaded."
   (unbind-key "C-s" isearch-mode-map)
   (bind-key* "C-s" #'save-buffer)
   (bind-key* "M-s" #'save-buffer)
+
+  (add-hook 'org-mode-hook (lambda ()
+                             (define-key org-mode-map (kbd "C-c g") 'org-mac-link-get-link)))
 
   ;; Set proxy configurations in emacs
   (setq url-proxy-services
