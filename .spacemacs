@@ -737,6 +737,21 @@ before packages are loaded."
   (setenv "http_proxy" "http://localhost:7890")
   (setenv "https_proxy" "http://localhost:7890")
 
+  (defun toggle-html-export-on-save()
+    (interactive)
+    (when (not (eq major-mode 'org-mode))
+      (error "Not an org-mode file!")
+      )
+    (if (memq 'org-html-export-to-html after-save-hook)
+        (progn (remove-hook 'after-save-hook 'org-html-export-to-html t)
+               (message "Disabled org html export on save!")
+               )
+      (add-hook 'after-save-hook 'org-html-export-to-html nil t)
+      (set-buffer-modified-p t)
+      (message "Enabled org html export on save!")
+        )
+    )
+
   ;; My Config Part3
 )
 
