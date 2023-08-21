@@ -65,12 +65,14 @@ This function should only modify configuration layer settings."
      (chinese :variables
               ;; chinese-enable-fcitx t
               )
+     (cmake :variables cmake-backend 'company-cmake)
      (colors :variables
              colors-colorize-identifiers 'all)
      command-log
      docker
      emoji
      ;; git
+     go
      gpu
      graphviz
      groovy
@@ -99,7 +101,6 @@ This function should only modify configuration layer settings."
      ;; version-control
      yaml
 
-     csharp
      emacs-lisp
      html
      lua
@@ -692,6 +693,7 @@ before packages are loaded."
     :bindings
     (kbd "i") 'dired-jump)
 
+  (require 'popup)
   (setq pyim-cloudim 'baidu)
 
   (setq pyim-dicts '((:name "greatdict" :file "~/dot/Spacemacs/pyim-greatdict.pyim")
@@ -700,7 +702,7 @@ before packages are loaded."
   (setq-default pyim-punctuation-translate-p '(no))
   (setq pyim-page-tooltip 'popup)
   (setq pyim-page-length 9)
-  (add-hook 'emacs-startup-hook #'(lambda () (pyim-restart-1 t)))
+  ;; (add-hook 'emacs-startup-hook #'(lambda () (pyim-restart-1 t)))
 
   (setq pyim-chinese-status t)
   (defun pyim-chinese-switch()
