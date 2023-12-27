@@ -716,6 +716,8 @@ before packages are loaded."
 
   (global-set-key (kbd "H-k") 'pyim-chinese-switch)
   (global-set-key (kbd "M-k") 'pyim-chinese-switch)
+  (global-set-key (kbd "M-l") 'pyim-chinese-switch)
+  (global-set-key (kbd "M-n") 'pyim-chinese-switch)
   (setq pyim-english-input-switch-functions
         '(pyim-chinese-probe))
 
