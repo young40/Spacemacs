@@ -90,8 +90,8 @@ This function should only modify configuration layer settings."
       )
      osx
      (plantuml :variables
-               plantuml-jar-path     "/usr/local/Cellar/plantuml/1.2021.16/libexec/plantuml.jar"
-               org-plantuml-jar-path "/usr/local/Cellar/plantuml/1.2021.16/libexec/plantuml.jar"
+               plantuml-jar-path     "/opt/homebrew/Cellar/plantuml/1.2023.13/libexec/plantuml.jar"
+               org-plantuml-jar-path "/opt/homebrew/Cellar/plantuml/1.2023.13/libexec/plantuml.jar"
                )
      ;; (shell :variables
      ;;        shell-default-height 30
