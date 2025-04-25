@@ -106,6 +106,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(
      (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t
                       auto-completion-private-snippets-directory '("~/dot/Spacemacs/snippet/"))
      better-defaults
      (chinese :variables
