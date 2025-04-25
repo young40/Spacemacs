@@ -55,6 +55,7 @@ This function should only modify configuration layer settings."
      ;; version-control
      treemacs)
 
+
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
    ;; loaded using load/require/use-package in the user-config section below in
@@ -769,6 +770,7 @@ before packages are loaded."
 
   ;; My Config Part3
   )
+
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
