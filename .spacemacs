@@ -55,7 +55,52 @@ This function should only modify configuration layer settings."
      ;; version-control
      treemacs)
 
+   ;; List of additional packages that will be installed without being wrapped
+   ;; in a layer (generally the packages are installed only and should still be
+   ;; loaded using load/require/use-package in the user-config section below in
+   ;; this file). If you need some configuration for these packages, then
+   ;; consider creating a layer. You can also put the configuration in
+   ;; `dotspacemacs/user-config'. To use a local version of a package, use the
+   ;; `:location' property: '(your-package :location "~/path/to/your-package/")
+   ;; Also include the dependencies as they will not be resolved automatically.
+   dotspacemacs-additional-packages '()
+
+   ;; A list of packages that cannot be updated.
+   dotspacemacs-frozen-packages '()
+
+   ;; A list of packages that will not be installed and loaded.
+   dotspacemacs-excluded-packages '()
+
+   ;; Defines the behaviour of Spacemacs when installing packages.
+   ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
+   ;; `used-only' installs only explicitly used packages and deletes any unused
+   ;; packages as well as their unused dependencies. `used-but-keep-unused'
+   ;; installs only the used packages but won't delete unused ones. `all'
+   ;; installs *all* packages supported by Spacemacs and never uninstalls them.
+   ;; (default is `used-only')
+   dotspacemacs-install-packages 'used-only
+
    ;; My Config Part1
+   dotspacemacs-additional-packages '(
+                                      org-mac-link
+                                      ;;(solarized-theme :location (recipe :fetcher github :repo "bbatsov/solarized-emacs"))
+
+                                      )
+
+   dotspacemacs-excluded-packages '(
+                                    pangu-spacing
+                                    undo-tree
+                                    find-by-pinyin-dired
+                                    treemacs-projectile
+                                    treemacs-persp
+                                    treemacs-icons-dired
+                                    treemacs-evil
+                                    treemacs-magit
+                                    treemacs
+                                    org-download
+                                    evil-tutor
+                                    )
+
    dotspacemacs-configuration-layer-path '("~/dot/Spacemacs/private/")
    dotspacemacs-configuration-layers
    '(
@@ -87,7 +132,7 @@ This function should only modify configuration layer settings."
           org-enable-hugo-support t
           org-enable-valign t
           org-pretty-entities t
-      )
+          )
      osx
      (plantuml :variables
                plantuml-jar-path     "/opt/homebrew/Cellar/plantuml/1.2023.13/libexec/plantuml.jar"
@@ -117,46 +162,7 @@ This function should only modify configuration layer settings."
      )
    ;; My Config Part1
 
-   ;; List of additional packages that will be installed without being wrapped
-   ;; in a layer (generally the packages are installed only and should still be
-   ;; loaded using load/require/use-package in the user-config section below in
-   ;; this file). If you need some configuration for these packages, then
-   ;; consider creating a layer. You can also put the configuration in
-   ;; `dotspacemacs/user-config'. To use a local version of a package, use the
-   ;; `:location' property: '(your-package :location "~/path/to/your-package/")
-   ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '(
-                                      org-mac-link
-                                      ;;(solarized-theme :location (recipe :fetcher github :repo "bbatsov/solarized-emacs"))
-
-                                      )
-
-   ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '()
-
-   ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(
-                                    pangu-spacing
-                                    undo-tree
-                                    find-by-pinyin-dired
-                                    treemacs-projectile
-                                    treemacs-persp
-                                    treemacs-icons-dired
-                                    treemacs-evil
-                                    treemacs-magit
-                                    treemacs
-                                    org-download
-                                    evil-tutor
-                                    )
-
-   ;; Defines the behaviour of Spacemacs when installing packages.
-   ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
-   ;; `used-only' installs only explicitly used packages and deletes any unused
-   ;; packages as well as their unused dependencies. `used-but-keep-unused'
-   ;; installs only the used packages but won't delete unused ones. `all'
-   ;; installs *all* packages supported by Spacemacs and never uninstalls them.
-   ;; (default is `used-only')
-   dotspacemacs-install-packages 'used-only))
+   ))
 
 (defun dotspacemacs/init ()
   "Initialization:
@@ -758,11 +764,11 @@ before packages are loaded."
       (add-hook 'after-save-hook 'org-html-export-to-html nil t)
       (set-buffer-modified-p t)
       (message "Enabled org html export on save!")
-        )
+      )
     )
 
   ;; My Config Part3
-)
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
