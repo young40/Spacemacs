@@ -60,7 +60,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(
      (auto-completion :variables
-                     auto-completion-private-snippets-directory '("~/dot/Spacemacs/snippet/"))
+                      auto-completion-private-snippets-directory '("~/dot/Spacemacs/snippet/"))
      better-defaults
      (chinese :variables
               ;; chinese-enable-fcitx t
@@ -71,7 +71,7 @@ This function should only modify configuration layer settings."
      command-log
      docker
      emoji
-     ;; git
+     git
      go
      gpu
      graphviz
@@ -622,7 +622,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-line-numbers t
    dotspacemacs-scratch-mode 'lisp-interaction-mode
 
-   dotspacemacs-startup-buffer-show-icons t
+   dotspacemacs-startup-buffer-show-icons nil
 
    ;;configuration-layer-elpa-archives
    ;;'(("melpa-cn" . "https://mirror.nju.edu.cn/elpa/melpa/")
@@ -709,7 +709,7 @@ before packages are loaded."
     (interactive)
     (setq pyim-chinese-status (not pyim-chinese-status))
     (if pyim-chinese-status
-      (message "Pyim Chinese: On")
+        (message "Pyim Chinese: On")
       (message "Pyim Chinese: Off"))
     )
   (defun pyim-chinese-probe() (not pyim-chinese-status))
@@ -726,6 +726,9 @@ before packages are loaded."
   (unbind-key "C-s" isearch-mode-map)
   (bind-key* "C-s" #'save-buffer)
   (bind-key* "M-s" #'save-buffer)
+
+  (global-set-key (kbd "s-s") 'save-buffer)
+
 
   (add-hook 'org-mode-hook (lambda ()
                              (define-key org-mode-map (kbd "C-c g") 'org-mac-link-get-link)))
