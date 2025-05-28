@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mermaid
+# key: mer_
+# --
+#+BEGIN_SRC mermaid
+$0
+#+END_SRC

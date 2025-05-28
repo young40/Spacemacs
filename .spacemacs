@@ -67,7 +67,8 @@ This function should only modify configuration layer settings."
    dotspacemacs-additional-packages '()
 
    ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '()
+   dotspacemacs-frozen-packages '(
+                                  org)
 
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '()
@@ -85,6 +86,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-additional-packages '(
                                       org-mac-link
                                       ;;(solarized-theme :location (recipe :fetcher github :repo "bbatsov/solarized-emacs"))
+                                      (ox-hugo :location (recipe :fetcher github :repo "kaushalmodi/ox-hugo"))
 
                                       )
 
@@ -776,3 +778,23 @@ before packages are loaded."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+  (custom-set-variables
+   ;; custom-set-variables was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(helm-buffer-max-length 60)
+   '(org-html-mathjax-template
+     "<script>\12  window.MathJax = {\12    loader: {load: ['[tex]/physics']},\12    tex: {\12      packages: {'[+]': ['physics']},\12      ams: {\12        multlineWidth: '%MULTLINEWIDTH'\12      },\12      tags: '%TAGS',\12      tagSide: '%TAGSIDE',\12      tagIndent: '%TAGINDENT'\12    },\12    chtml: {\12      scale: %SCALE,\12      displayAlign: '%ALIGN',\12      displayIndent: '%INDENT'\12    },\12    svg: {\12      scale: %SCALE,\12      displayAlign: '%ALIGN',\12      displayIndent: '%INDENT'\12    },\12    output: {\12      font: '%FONT',\12      displayOverflow: '%OVERFLOW'\12    }\12  };\12</script>\12\12<script\12  id=\"MathJax-script\"\12  async\12  src=\"%PATH\">\12</script>"))
+  (custom-set-faces
+   ;; custom-set-faces was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   )
+  )
