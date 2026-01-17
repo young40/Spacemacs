@@ -3,3 +3,4 @@
 # key: mathjax
 # --
 #+HTML_MATHJAX: path:https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#+HTML_HEAD_EXTRA: <meta http-equiv="refresh" content="5">
